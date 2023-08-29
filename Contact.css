@@ -1,0 +1,428 @@
+
+body{
+    background-color: rgb(10, 14, 20);
+    background-size: cover;
+    background-blend-mode: multiply;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    max-height: 1000px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+
+#NavigationBar{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /*color: #8c8c8c;*/
+    z-index: 300;
+    background-color: rgba(21, 28, 41, 0);
+    backdrop-filter: blur(0px);
+    transition: .3s;
+    background: transparent;
+    transition: background 0.5s ease;
+}
+
+#NavigationBar.solid {
+    background: rgb(21, 28, 41); 
+}
+
+a{
+    text-decoration: none;
+    /*color: #8c8c8c;*/
+    cursor: pointer;
+    color: rgb(145, 145, 145);
+}
+
+#UserPic{
+
+    transform: scale(0.8);
+
+}
+
+
+.Name{
+    /*color: rgb(103, 161, 255);*/
+    color: white;
+    padding-top: 0%;
+    flex-basis: 39%;
+    display: flex;
+    left: 50%;
+    text-shadow: 1px 1px 2px #000000;
+    padding-left: 14%;
+    cursor: default;
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+
+
+#TopText{
+    color: rgb(103, 161, 255); 
+    transition: .3s;
+}
+
+
+
+.Button{
+    font-family: Calibri;
+    transition: 0.3s;
+    border: none;
+    /*color: #969696;*/
+    color: white;
+    background: linear-gradient(white, white) bottom / 0 .15em no-repeat;
+    padding: 25px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-position: center bottom;
+    height: 0px;
+    margin: 28px;
+    margin-top: 0px;
+    margin-bottom: -14px;
+}
+
+
+.Button:hover{
+    background-size: 100% .15em;
+    filter: brightness(150%);
+    transition: 0.4s;
+    color: white;
+}
+
+
+
+.Btn{
+    border: none;
+    padding: 10px 10px;
+    transition: 0.5s
+}
+
+#TopTextMe{
+    color: rgb(103, 161, 255);
+}
+
+#description{
+    position: relative;
+    width: 100%;
+    height: 45%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(12, 15, 22, .9);
+    background-blend-mode: multiply;
+}
+
+.WriteUp{
+    position: relative;
+    top: 35%;
+    cursor: default;
+    color: white;
+    font-family: calibri;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-left: 0%;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    animation-duration: .7s; 
+    animation-timing-function: ease-out; 
+    animation-fill-mode: forwards; 
+    
+}
+
+.BottomWriteUp{
+    margin-top: 10%;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.7);
+    font-family: calibri;
+    cursor: default;
+    letter-spacing: 1px;
+    font-size: 15px;
+}   
+
+
+#Grid-Containter{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+
+}
+
+
+
+#EmailImg{
+    transform: scale(.75);
+
+
+}
+
+#CharactersRemain{
+    position: relative;
+    font-family: Calibri;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    left: 165px;
+    
+}
+
+
+#EmailItem{
+    text-align: center;
+    border-left: 2px solid rgba(100, 100, 100);
+    margin-left: 100px;
+}
+
+#LocationImg{
+    margin-top: 20px;
+}
+
+.ContactInfo{
+
+    font-family: Calibri;
+    color: rgba(200, 200, 200);
+    font-size: 15px;
+    cursor: default;
+    margin-top: -25px;
+    line-height: 20px;
+}
+
+#ContactPhoneImg{
+    margin-top: 40px;
+}
+
+#ContactEmailImg{
+    margin-top: 40px;
+}
+
+#ContactEmailTitle{
+    margin-top: -10px;
+}
+
+#Numbers{
+    line-height: 20px;
+    font-family: Calibri;
+    color: rgba(200, 200, 200);
+    font-size: 15px;
+    cursor: default;
+    margin-top: -25px;
+}
+
+.ContactInfoTitle{
+    font-family: Calibri;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: default;
+    font-variant: small-caps;
+    margin-top: 10px;
+}
+
+
+#ContactFormContainer{
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 10px;
+    margin-left: 20%;
+    
+    
+}
+
+#ContactFormText{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    font-family: Calibri;
+   
+}
+
+#NameInput{
+    
+    text-align: center;
+   
+}
+
+.InputBox{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    font-family: calibri;
+    font-size: 16px;
+    border-radius: 0px;
+    width: 500px;
+    background-color: rgb(32, 48, 70);
+    border: 0px solid white;
+    resize: vertical;
+}
+
+.InputMessageBox{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    height: 200px;
+    color: white;
+    font-family: calibri;
+    font-size: 16px;
+    border-radius: 0px;
+    width: 500px;
+    background-color: rgb(32, 48, 70);
+    border: 0px solid white;
+    word-wrap: break-word;
+    resize: none;
+}
+
+input::placeholder {
+    color: rgb(200, 200, 200); /* Set your desired placeholder color here */
+}
+input::placeholder {
+    color: rgb(200, 200, 200); /* Set your desired placeholder color here */
+}
+
+
+input:focus {
+    outline: none;
+}
+
+textarea::placeholder {
+    color: rgb(200, 200, 200); /* Set your desired placeholder color here */
+}
+
+
+textarea:focus {
+    outline: none;
+}
+
+
+#MainButton{
+    background-color: transparent;
+    font-family: Calibri;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .3s;
+    font-weight: bold;
+    transition: border-color 0.3s ease-in-out;
+    transition: .3s;
+    cursor: pointer; 
+    border-radius: 0px;
+}
+
+#MainButton:hover{
+    border: 1px solid rgb(103, 161, 255);
+    transform: scale(1.05);
+    color: rgb(103, 161, 255);
+}
+
+#SendButton{
+    text-align: center;
+}
+
+
+#bottomspace{
+
+    margin-bottom: 1500px;
+
+}
+
+
+#Success{
+    color: green;
+    font-family: calibri;
+    font-size: 12px;
+    display: none;
+}
+
+
+#Fail{
+    color: red;
+    font-family: calibri;
+    font-size: 12px;
+    display: none;
+}
+
+#JsInfo{
+    color: rgb(255, 255, 255);
+    font-family: calibri;
+    font-size: 12px;
+    
+}
+
+.Notif{
+    font-family: Calibri;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+#ConfirmationNotif{
+    display: none;
+    position: fixed;
+    left: 20px;
+    top: 90px;
+    color: #48ff51;
+    border-left: 5px solid white;
+    background-color: rgba(170, 255, 121, 0.2);
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+}
+
+#ProblemNotif{
+    display: none;
+    position: fixed;
+    left: 20px;
+    top: 90px;
+    color: #ff6767;
+    border-left: 5px solid white;
+    background-color: rgba(255, 137, 121, 0.2);
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+}
+
+
+
+.NotifImg{
+    position: fixed;
+    top: 112px;
+    left: 34px;
+    transform: scale(.6);
+    
+
+}
+
+#FailImg{
+    display: none;
+}
+
+#SuccessImg{
+    display: none;
+}
+

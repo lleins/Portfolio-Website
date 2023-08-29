@@ -1,0 +1,712 @@
+body{
+    background-color: rgb(10, 14, 20);
+    background-image: url("BackMain1.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Calibri;
+    overflow-x: hidden;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+#NavigationBar{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    color: #8c8c8c;
+    z-index: 300;
+    background-color: rgb(21, 28, 41);
+    backdrop-filter: blur(0px);
+    transition: .3s;
+    z-index: 9999;
+    background: transparent;
+    transition: background 0.5s ease;
+}
+
+
+
+
+#NavigationBar.solid {
+background: rgb(21, 28, 41); 
+}
+
+#NavigationBar:hover{
+    
+    transition: .3s;
+   
+}
+
+
+
+a{
+
+    color: rgb(0, 98, 255);
+}
+
+
+
+.Name{
+    color: 	rgb(255, 255, 255);
+    padding-top: 0%;
+    flex-basis: 39%;
+    display: flex;
+    left: 50%;
+    text-shadow: 1px 1px 2px #000000;
+    padding-left: 14%;
+    cursor: default;
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+#TopText{
+    color: rgb(103, 161, 255); 
+    transition: .3s;
+}
+
+
+.Button{
+    font-family: Calibri;
+    transition: 0.3s;
+    border: none;
+    /*color: #969696;*/
+    color: white;
+    background: linear-gradient(white, white) bottom / 0 .15em no-repeat;
+    padding: 25px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-position: center bottom;
+    height: 0px;
+    margin: 28px;
+    margin-top: 0px;
+    margin-bottom: -14px;
+}
+
+
+.Button:hover{
+    background-size: 100% .15em;
+    color: white;
+    filter: brightness(150%);
+    transition: 0.3s;
+}
+
+
+
+.Btn{
+    border: none;
+    padding: 10px 10px;
+    transition: 0.5s
+}
+
+
+#ResumeTextTop{
+    color: rgb(103, 161, 255);
+}
+
+
+#description{
+    display: grid;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(12, 15, 22, .9);
+    background-blend-mode: multiply;
+}
+
+.WriteUp{
+    position: relative;
+    top: 29%;
+    cursor: default;
+    color: white;
+    font-family: calibri;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-left: 0%;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    animation-duration: .7s; 
+    animation-timing-function: ease-out; 
+    animation-fill-mode: forwards; 
+}
+
+.BottomWriteUp{
+    position: relative;
+    top: -50%;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.7);
+    font-family: calibri;
+    cursor: default;
+    letter-spacing: 1px;
+    font-size: 15px;
+}   
+
+
+#MainButton{
+    background-color: transparent;
+    font-family: Calibri;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    transition: .3s;
+    font-weight: bold;
+    transition: border-color 0.3s ease-in-out;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: -42%;
+    z-index: 999;
+
+}
+
+#ButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#MainButton:hover{
+    border: 1px solid rgb(103, 161, 255);
+    color: rgb(103, 161, 255);
+    transform: scale(1.05);
+
+}
+
+#ScrollImg{
+    position: absolute;
+    top: 90%;
+    color: white;
+    cursor: default;
+    left: 49%;
+    transform: (45deg);
+    transition: transform 0.3s ease;
+    transform: scale(.9);
+}
+
+#ScrollImg:hover{
+    transform: translateY(15px);
+    
+    
+}
+
+
+
+
+#Nav2{
+    scroll-behavior: smooth;
+    position: sticky;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin-top: 0px;
+    background-color: rgb(21, 28, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: 9%;
+    justify-content: space-around;
+    color: #8c8c8c;
+    z-index: 300;
+    backdrop-filter: blur(4px);
+    
+    transition: .3s;
+    
+}
+
+#Contact{
+    margin-left: 7%;
+}
+
+
+#Nav2:hover{
+    transition: .3s;
+}
+
+
+.Qual{
+    scroll-behavior: smooth;
+    font-size: 18px;
+    font-family: Calibri;
+    margin-top: 50%;
+    margin-bottom: 10%;
+}
+
+.Work{
+    font-size: 18px;
+    font-family: Calibri;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.Volun{
+    font-size: 18px;
+    font-family: Calibri;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.Educ{
+    font-size: 18px;
+    font-family: Calibri;
+    margin-top: 10%;
+    margin-bottom: 50%;
+}
+
+
+
+.filler{
+    visibility: hidden;
+    font-size: 1px;
+}
+
+
+.container{
+    position: relative;
+    margin-top: -600px;
+    background-color: rgb(10, 14, 20);
+    border: 1px solid #00000000;
+    border-top: none;
+    box-shadow: 0px 0px 0px 0px #000;
+    
+}
+
+
+
+#Heading2 h1{
+    cursor: default;
+    color: white;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    border-bottom: 2px solid rgb(103, 161, 255);
+    
+}
+
+#Heading2 p{
+    font-size: 15px;
+    color: white;
+    position: relative;
+    top: 95px;
+    text-align: center;
+    cursor: default;
+}
+
+#Summary h1{
+    border-bottom: 2px solid rgb(103, 161, 255);
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 135px;
+    cursor: default;
+   
+}
+
+#SumHead{
+    margin-top: -30px;
+}
+
+#Summary ul{
+    cursor: default;
+    
+    position: relative;
+    top: 135px;
+    text-align: left;
+    
+}
+
+#QualMarker{
+
+    margin-top: 0px;
+    visibility: hidden;
+
+}
+
+li{
+    font-size: 17px;
+    color: white;
+    padding: 5px 5px;
+    cursor: default;
+    margin-left: 20%;
+}
+
+ul{
+    opacity: .5;
+    transition: .5s ease;
+    cursor: default;
+}
+
+
+h1{
+    margin-left: 14%;
+    width: 80%;
+    font-size: 25px;
+}
+
+h2{
+    margin-left: 21%;
+    margin-right: 7%;
+    font-size: 20px;
+}
+
+h3{
+    margin-left: 21%;  
+    font-size: 17px;
+}   
+
+#Work h1{
+    border-bottom: 2px solid rgb(103, 161, 255);
+    color: white;
+    text-align: center;
+    display: in-line;
+    position: relative;
+    top: 200px;
+
+}
+#Summary ul:hover{
+    opacity: 1;
+    transition: .5s ease;
+    cursor: default;
+}
+
+#WorkMark{
+
+    visibility: hidden;
+    margin-top: -50px
+
+
+}
+
+#WorkHead{
+    margin-top: -80px;
+}
+
+#Peer{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 200px;
+    cursor: default;
+}
+
+#PeerInfo{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 190px;
+    cursor: default;
+}
+
+#PeerDate{
+    position: relative;
+    top: 250px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+   
+}
+
+#PeerList{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 200px;
+    text-align: left;
+    cursor: default;
+}
+
+#PeerList:hover{
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+#Animal{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 200px;
+    cursor: default;
+}
+
+#AnimalInfo{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 190px;
+    cursor: default;
+
+}
+#AnimalDate{
+    position: relative;
+    top: 250px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+}
+
+
+#AnimalList{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 200px;
+    text-align: left;
+    cursor: default;
+}
+
+#AnimalList:hover{
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+#Maint{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 200px;
+    cursor: default;
+
+}
+
+#MaintInfo{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 190px;
+    cursor: default;
+}
+
+#MaintDate{
+    position: relative;
+    top: 250px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+}
+
+#MaintList{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 200px;
+    text-align: left;
+    cursor: default;
+}
+
+#MaintList:hover{
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+
+#Volunteer h1{
+    border-bottom: 2px solid rgb(103, 161, 255);
+    color: white;
+    text-align: center;
+    display: in-line;
+    position: relative;
+    top: 225px;
+    cursor: default;
+}
+
+
+#MarkerVolunteer{
+    cursor: default;
+    margin-top: -100px;
+    visibility: hidden;
+}
+
+#VolunteerExp{
+    margin-top: 70px;
+}
+
+#Farm{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 225px;
+    cursor: default;
+}
+
+#FarmInfo{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 215px;
+    cursor: default;
+}
+
+#FarmDate{
+    position: relative;
+    top: 275px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+}
+
+#FarmList{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 225px;
+    text-align: left;
+    cursor: default;
+}
+
+#FarmList:hover{
+    transition: .5s ease;
+    opacity: 1;
+}
+
+#Cook{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 225px;
+    cursor: default;
+}
+
+#CookInfo{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 215px;
+    cursor: default;
+}
+
+#CookDate{
+    position: relative;
+    top: 295px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+}
+
+#CookList{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 225px;
+    text-align: left;
+    cursor: default;
+}
+
+#CookList:hover{
+    transition: .5s ease;
+    opacity: 1;
+}
+
+#Education h1{
+    border-bottom: 2px solid rgb(103, 161, 255);
+    color: white;
+    text-align: center;
+    display: in-line;
+    position: relative;
+    top: 225px;
+    cursor: default;
+}
+
+#MarkerEducation{
+    cursor: default;
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+
+#Bach{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 225px;
+    cursor: default;
+}
+
+#EducHead{
+
+    margin-top: 50px;
+
+}
+
+
+#Bachinfo{
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 225px;
+    cursor: default;
+}   
+
+
+#BachDate{
+    position: relative;
+    top: 275px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+}
+
+#Ref{
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-top: 225px;
+    font-size: 20px;
+    font-style: italic;
+    cursor: default;
+    margin-left: 8%;
+}
+
+h1{
+    cursor: default;
+}
+
+#Education{
+    margin-bottom: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

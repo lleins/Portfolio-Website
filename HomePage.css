@@ -1,0 +1,1091 @@
+
+body{
+    background-color: rgba(12, 15, 22, .9);
+    background-image: url("BackMain1.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    /*max-height: 1000px;*/
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+   
+}
+
+
+
+
+#NavigationBar{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /*color: #8c8c8c;*/
+    z-index: 300;
+    background-color: rgba(21, 28, 41, 0);
+    backdrop-filter: blur(0px);
+    transition: .3s;
+    background: transparent;
+    transition: background 0.5s ease;
+}
+
+#NavigationBar.solid {
+    background: rgb(21, 28, 41); 
+}
+
+a{
+    text-decoration: none;
+    /*color: #8c8c8c;*/
+    cursor: pointer;
+    color: rgb(145, 145, 145);
+}
+
+#UserPic{
+
+    transform: scale(0.8);
+
+}
+
+
+.Name{
+    /*color: rgb(103, 161, 255);*/
+    color: white;
+    padding-top: 0%;
+    flex-basis: 39%;
+    display: flex;
+    left: 50%;
+    text-shadow: 1px 1px 2px #000000;
+    padding-left: 14%;
+    cursor: default;
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+
+
+#TopText{
+    color: rgb(103, 161, 255); 
+    transition: .3s;
+}
+
+
+
+.Button{
+    font-family: Calibri;
+    transition: 0.3s;
+    border: none;
+    /*color: #969696;*/
+    color: white;
+    background: linear-gradient(white, white) bottom / 0 .15em no-repeat;
+    padding: 25px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-position: center bottom;
+    height: 0px;
+    margin: 28px;
+    margin-top: 0px;
+    margin-bottom: -14px;
+}
+
+
+.Button:hover{
+    background-size: 100% .15em;
+    filter: brightness(150%);
+    transition: 0.4s;
+    color: white;
+}
+
+
+
+.Btn{
+    border: none;
+    padding: 10px 10px;
+    transition: 0.5s
+}
+
+
+
+.MainTextTop{
+    position: relative;
+    cursor: default;
+    color: white;
+    font-family: calibri;
+    font-size: 50px;
+    align-content: center;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#TextContainerTop{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.BottomText{
+    /*color: rgb(108, 221, 255);*/
+    color: rgb(103, 161, 255);
+    
+}
+
+.SummaryTextBottom{
+    position: relative;
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-family: calibri;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    cursor: default;
+}
+
+#TextContainerBottom{
+    margin-top: -3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#ButtonContainer{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MainButton{
+    background-color: transparent;
+    font-family: Calibri;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    transition: .3s;
+    font-weight: bold;
+    transition: border-color 0.3s ease-in-out;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+#MainButton:hover{
+    border: 1px solid rgb(103, 161, 255);
+    color: rgb(103, 161, 255);
+    transform: scale(1.05);
+
+}
+
+#Copyrights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#CopywrightWriting{
+    font-family: Calibri;
+    font-size: 10px;
+    color: rgb(255, 255, 255, 0.7);
+    cursor: default;
+}
+
+
+#PortImage{
+
+    position: relative;
+
+}
+
+#TopSocials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
+
+.TopSocialIcons{
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: scale(0.5);
+    cursor: pointer;
+    transition: .2s;
+}
+
+#TopSocialsMobile{
+    display: none;
+}
+
+
+
+#InstaTop:hover{
+    transform: scale(.6);
+    
+}
+
+#FaceTop:hover{
+    transform: scale(.6);
+}
+
+#TwitterTop:hover{
+    transform: scale(.6);
+}
+
+
+#LinkTop:hover{
+    transform: scale(.6);
+}
+
+
+
+#Headshot{
+    transform: scale(0.25);
+    
+}
+
+
+#MainTextContainer{
+    
+    /*background-color: rgba(26, 34, 47);*/
+    margin-top: 5%;
+    backdrop-filter: blur(0px);
+    /*box-shadow: 0 5px 9px rgba(255, 255, 255, 0.1);*/
+    height: 100%;
+    
+    
+}
+
+
+
+#NavigationBar:hover{
+    
+    transition: .3s;
+   
+}
+
+  
+
+#Instagram{
+
+    position: absolute;
+    top: 90px;
+    width: 24px;
+    height: 24px;
+
+
+}
+
+#Facebook{
+
+    position: absolute;
+    top: 140px;
+    width: 24px;
+    height: 24px;
+
+}
+
+
+#Twitter{
+
+    position: absolute;
+    top: 190px;
+    width: 24px;
+    height: 24px;
+
+
+}
+
+#BottomContainer{
+    height: 100%;
+    margin-top: -10%;
+    background-color: rgb(10, 14, 20);
+    padding-bottom: -100px;
+    width: 100%;
+}
+
+#QuickHead{
+    color: white;
+    margin-left: -30px;
+    list-style-type: none;
+    left: 20%;
+    font-variant: small-caps;
+}
+
+#QuickLinks{
+    
+    margin-left: 40%;
+    position: absolute;
+}
+
+#NameHead{
+
+    color: white;
+    list-style-type: none;
+    font-variant: small-caps;
+
+}
+
+
+li{
+    color: rgb(145, 145, 145);
+    font-size: 15px;
+    font-family: calibri;
+    letter-spacing: 1px;
+    line-height: 2;
+    cursor: default;
+}
+
+#NameContact{
+    list-style-type: none;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.BotomList{
+    
+    margin-right: 10%;
+}
+
+.BottomListItem{
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+
+#ContactMe{
+    list-style-type: none;
+    position: absolute;
+
+}
+
+#ContactHead{
+    color: white;
+    list-style-type: none;
+    font-variant: small-caps;
+}
+
+.BottomHeading{
+    font-size: 30px;
+}
+
+#ContactMe{
+    
+    margin-left: 70%;
+}
+
+
+
+
+
+#InstagramBottom{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 60px;
+    transform: scale(.8);
+}
+
+#FacebookBottom{
+    position: absolute;
+    margin-left: 140px;
+    width: 24px;
+    height: 24px;
+    transform: scale(.8);
+}
+
+
+#TwitterBottom{
+    position: absolute;
+    margin-left: 220px;
+    width: 24px;
+    height: 24px;
+    transform: scale(.8);
+
+}
+
+.BottomSocialIcons{
+    margin-top: 330px;
+}
+
+
+#PhoneBottom{
+
+    position: absolute;
+    margin-top: -86px;
+
+}
+
+#GmailBottom{
+
+    position: absolute;
+    margin-top: -26px;
+
+}
+
+#MenuButtonContainer{
+    display: none;
+    justify-content: right;
+    z-index: 999;
+   
+}
+
+#Menu{
+    transform: scale(.6);
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    right: 55px;
+    z-index: 999;
+   
+}
+
+
+
+#MenuButton_Menu{
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba(32, 43, 63);
+    height: 100%;
+    width: 65%;
+    top: 0;
+    right: 0;
+}
+
+
+.Style{
+    font-size: 12px;
+    font-family: Calibri;
+    color: white;
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.MenuListItem{
+    list-style: none;
+    font-size: 16px;
+}
+
+#MenuButtonMenuContainer{
+    display: none;
+    animation: fadeIn 0.2s ease-in-out;
+    
+}
+
+
+
+@keyframes fadeIn {
+    from {
+      
+      transform: translatex(200px); /* Initial position if needed */
+    }
+    to {
+      
+      transform: translatex(0); /* Final position */
+    }
+  }
+
+#CloseMenuImg{
+    cursor: pointer;
+    transform: scale(.5);
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+@media screen and (max-width: 985px) {
+    .BottomHeading{
+        font-size: 20px;
+    }
+    
+    .BottomListItem{
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+    
+    #QuickLinks{
+        margin-left: 45%;
+        position: absolute;
+    }
+    
+    .ImageResize{
+        transform: scale(.7);
+    }
+    
+    #PhoneBottom{
+
+        position: absolute;
+        margin-top: -100px;
+    
+    }
+    
+    #GmailBottom{
+    
+        position: absolute;
+        margin-top: -50px;
+    
+    }
+
+    .BottomSocialIcons{
+        margin-top: 250px;
+    }
+}
+
+
+
+@media screen and (max-width: 690px) {
+    
+    meta[name="viewport"] {
+        content: width=device-width, initial-scale=0.8;
+    }
+
+    .MainTextTop{
+        position: relative;
+        cursor: default;
+        color: white;
+        font-family: calibri;
+        font-size: 35px;
+        align-content: center;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        font-variant: small-caps;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    #TextContainerTop{
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #TextContainerBottom{
+        margin-top: -3%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .SummaryTextBottom{
+        position: relative;
+        color: rgb(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-family: calibri;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        cursor: default;
+    }
+
+    .Button{
+        display: none;
+    }
+
+    .Name{
+        /*color: rgb(103, 161, 255);*/
+        color: white;
+        padding-top: 0%;
+        flex-basis: 39%;
+        display: flex;
+        left: 50%;
+        text-shadow: 1px 1px 2px #000000;
+        padding-left: 9%;
+        cursor: default;
+        font-family: Calibri;
+        font-size: 23px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-variant: small-caps;
+    }
+
+    #MenuButtonContainer{
+        display: flex;
+        justify-content: right;
+        z-index: 999;
+    }
+
+    #ButtonContainer{
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #MainButton{
+        background-color: transparent;
+        font-family: Calibri;
+        color: white;
+        border: 1px solid white;
+        padding: 8px;
+        transition: .3s;
+        font-weight: bold;
+        transition: border-color 0.3s ease-in-out;
+        transition: .3s;
+        cursor: pointer;
+        font-size: 11px;
+    }
+
+    #BottomContainer{
+        height: 100%;
+        margin-top: -50%;
+        background-color: rgb(10, 14, 20);
+        padding-bottom: -100px;
+        width: 100%;
+    }
+
+    .BottomHeading{
+        font-size: 15px;
+    }
+    
+    .BottomListItem{
+        margin-bottom: 30px;
+        font-size: 8px;
+    }
+    
+    #QuickLinks{
+        margin-left: 48%;
+        position: absolute;
+    }
+    
+    .ImageResize{
+        transform: scale(.6);
+    }
+    
+    #PhoneBottom{
+
+        position: absolute;
+        margin-top: -95px;
+    
+    }
+    
+    #GmailBottom{
+    
+        position: absolute;
+        margin-top: -50px;
+    
+    }
+
+    #NameContact{
+
+        margin-left: 0px;
+        position: absolute;
+    }
+
+    .BottomSocialIcons{
+        display: none;
+    }
+    #ContactMe{
+        margin-right: 15px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 492px) {
+    
+    meta[name="viewport"] {
+        content: width=device-width, initial-scale=0.8;
+    }
+
+    #ContactMe{
+        margin-right: 15px;
+        display: none;
+    }
+    .MainTextTop{
+        position: relative;
+        cursor: default;
+        color: white;
+        font-family: calibri;
+        font-size: 25px;
+        align-content: center;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        font-variant: small-caps;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    #TextContainerTop{
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #TextContainerBottom{
+        margin-top: -3%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .SummaryTextBottom{
+        position: relative;
+        color: rgb(255, 255, 255, 0.7);
+        font-size: 9px;
+        font-family: calibri;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        cursor: default;
+    }
+
+    .Button{
+        display: none;
+    }
+
+    .Name{
+        /*color: rgb(103, 161, 255);*/
+        color: white;
+        padding-top: 0%;
+        flex-basis: 39%;
+        display: flex;
+        left: 50%;
+        text-shadow: 1px 1px 2px #000000;
+        padding-left: 9%;
+        cursor: default;
+        font-family: Calibri;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-variant: small-caps;
+    }
+
+    #MenuButtonContainer{
+        display: flex;
+        justify-content: right;
+        z-index: 999;
+    }
+
+    #Menu{
+        transform: scale(.5);
+        cursor: pointer;
+        position: fixed;
+        top: 25px;
+        right: 35px;
+        z-index: 999;
+    }
+
+    #ButtonContainer{
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #MainButton{
+        background-color: transparent;
+        font-family: Calibri;
+        color: white;
+        border: 1px solid white;
+        padding: 8px;
+        transition: .3s;
+        font-weight: bold;
+        transition: border-color 0.3s ease-in-out;
+        transition: .3s;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    #BottomContainer{
+        height: 100%;
+        margin-top: -70%;
+        background-color: rgb(10, 14, 20);
+        padding-bottom: -100px;
+        width: 100%;
+    }
+    
+    #NameContact{
+
+        margin-left: -20px;
+        position: absolute;
+    }
+
+    .BottomSocialIcons{
+        display: none;
+    }
+
+    .BottomHeading{
+        font-size: 17px;
+    }
+    
+    .BottomListItem{
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    
+    #QuickLinks{
+        margin-left: 65%;
+        position: absolute;
+    }
+    
+    .ImageResize{
+        transform: scale(.6);
+    }
+    
+    #PhoneBottom{
+
+        position: absolute;
+        margin-top: -105px;
+        margin-left: -2px;
+    }
+    
+    #GmailBottom{
+    
+        position: absolute;
+        margin-top: -52px;
+        margin-left: -2px;
+    
+    }
+
+    #NameContact{
+
+        margin-left: -20px;
+        position: absolute;
+    }
+    
+    #BottomWriteup{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    
+    meta[name="viewport"] {
+        content: width=device-width, initial-scale=0.8;
+    }
+
+    #ContactMe{
+        margin-right: 15px;
+    }
+    .MainTextTop{
+        position: relative;
+        cursor: default;
+        color: white;
+        font-family: calibri;
+        font-size: 23px;
+        align-content: center;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        font-variant: small-caps;
+        text-shadow: 2px 2px 4px #000000;
+        
+    }
+
+    #TextContainerTop{
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #TextContainerBottom{
+        margin-top: -3%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .SummaryTextBottom{
+        position: relative;
+        color: rgb(255, 255, 255, 0.7);
+        font-size: 9px;
+        font-family: calibri;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        cursor: default;
+        
+    }
+
+    .Button{
+        display: none;
+    }
+
+    .Name{
+        /*color: rgb(103, 161, 255);*/
+        color: white;
+        padding-top: 0%;
+        flex-basis: 39%;
+        display: flex;
+        left: 50%;
+        text-shadow: 1px 1px 2px #000000;
+        padding-left: 7%;
+        cursor: default;
+        font-family: Calibri;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-variant: small-caps;
+        margin-top: 20px;
+    }
+
+    #MenuButtonContainer{
+        display: flex;
+        justify-content: right;
+        z-index: 999;
+    }
+
+    #Menu{
+        transform: scale(.6);
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 35px;
+        z-index: 999;
+    }
+
+    #ButtonContainer{
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    #MainButton{
+        background-color: transparent;
+        font-family: Calibri;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        transition: .3s;
+        font-weight: bold;
+        transition: border-color 0.3s ease-in-out;
+        transition: .3s;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    #BottomContainer{
+       
+        height: 50%;
+        margin-top: -70%;
+        background-color: rgb(10, 14, 20);
+        padding-bottom: -100px;
+        width: 100%;
+        padding-right: 32px;
+    }
+    
+    #NameContact{
+        margin-left: -20px;
+        position: absolute;
+    }
+
+    .BottomSocialIcons{
+        display: none;
+    }
+
+    .BottomHeading{
+        font-size: 17px;
+    }
+    
+    .BottomListItem{
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    
+    #QuickLinks{
+        margin-left: 60%;
+        position: absolute;
+    }
+    
+    .ImageResize{
+        transform: scale(.6);
+    }
+    
+    #PhoneBottom{
+
+        position: absolute;
+        margin-top: -107px;
+        margin-left: -2px;
+    }
+    
+    #GmailBottom{
+    
+        position: absolute;
+        margin-top: -53px;
+        margin-left: -2px;
+    
+    }
+
+    #NameContact{
+
+        margin-left: -20px;
+        position: absolute;
+    }
+    
+    #BottomWriteup{
+        display: none;
+    }
+
+    #TopSocials{
+        display: none;
+    }
+    
+   
+    .TopSocialIcons{
+        display: none;
+    }
+
+    #TopSocialsMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        position: fixed;
+        top: 150px;
+        left: -5px;
+        z-index: 9999;
+        background: rgb(21, 28, 41); 
+        border-radius: 5px;
+    }
+    
+    .TopSocialIconsMobile{
+        transform: scale(.7);
+        display: default;
+        padding: 7px;
+    }
+
+    #Copyrights{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #CopywrightWriting{
+        font-family: Calibri;
+        font-size: 10px;
+        color: rgb(255, 255, 255, 0.7);
+        cursor: default;
+    }
+
+    #ContactMe{
+        right: -25px;
+        display: none;
+    }
+
+}
+
+
+

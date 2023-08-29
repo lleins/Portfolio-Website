@@ -1,0 +1,164 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="HomePage.css" type="text/css" rel="stylesheet">
+    <script src="HomePage.js" defer></script>
+    <title>Home - Lukas Leins</title>
+</head>
+
+<body>
+
+<div id="NavigationBar">
+    <p class="Name">Lukas&nbsp;  <span id="TopText">  Leins</span></p>
+
+
+    <button onclick="location.href='HomePage.html'" class="Button Home">Home</button>
+    <button onclick="location.href='Resume.html'"class="Button Resume">Resume</button>
+    <button onclick="location.href='Projects.html'" class="Button Projects">Projects</button>
+    <button onclick="location.href='Contact.html'" class="Button About">Contact</button>
+</div>
+
+
+
+<div id="MenuButtonContainer">
+    <img id="Menu" src="Images/SmallMenuImg.png" alt="Menu Image" ontouchstart="MenuButton()" onclick="MenuButton()">
+</div>
+
+<div id="MenuButtonMenuContainer">
+    <div id="MenuButton_Menu">
+        <ul>    
+            <li class="MenuListItem"><img id="CloseMenuImg" src="Images/CloseImg.png" alt="Close" ontouchstart="CloseMenuButton()" onclick="CloseMenuButton()"></li>
+            <li class="MenuListItem Style" id="MenuHome" onclick="location.href='HomePage.html'">Home</li>
+            <li class="MenuListItem Style" id="MenuResume" onclick="location.href='Resume.html'">Resume</li>
+            <li class="MenuListItem Style" id="MenuProjects" onclick="location.href='Projects.html'">Projects</li>
+            <li class="MenuListItem Style" id="MenuContact" onclick="location.href='Contact.html'">Contact</li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="MainTextContainer">
+
+    <div id="TextContainerTop">
+
+
+        <p class="MainTextTop">Backend & Frontend<span class="BottomText"> Developer</span><br></p>
+        
+    </div>
+
+
+    <div id="TextContainerBottom">
+
+            <p class="SummaryTextBottom">My name is Lukas Leins and I am a Backend and Frontend Developer</p>
+
+    </div>
+
+    <div id="ButtonContainer">
+
+        <button onclick="goToNewPage()" id="MainButton">SEE MY WORK</button>
+        
+    </div>
+
+    
+    <!--
+    <div id="PortImage">
+            <img id="Headshot" src="Images/HeadshotTemp.jpg">
+    </div>
+   -->
+
+
+    <div id="TopSocials">
+        <img class="TopSocialIcons" id="InstaTop" src="Images/InstaMain.png">
+        <img class="TopSocialIcons" id="FaceTop"  src="Images/FaceMain.png">
+        <img class="TopSocialIcons" id="TwitterTop"  src="Images/TwitterMain.png">
+        <img class="TopSocialIcons"  id="LinkTop" src="Images/LinkMain.png">
+    </div>
+
+    <div id="Copyrights">
+
+        <p id="CopywrightWriting">Copyright © 2023 - Lukas Leins - All Rights Reserved </p>
+
+
+    </div>
+
+    
+</div>
+
+<div id="TopSocialsMobile">
+    <img class="TopSocialIconsMobile" id="InstaTopMobile" src="Images/InstaMain.png">
+    <img class="TopSocialIconsMobile" id="FaceTopMobile"  src="Images/FaceMain.png">
+    <img class="TopSocialIconsMobile" id="TwitterTopMobile"  src="Images/TwitterMain.png">
+    <img class="TopSocialIconsMobile"  id="LinkTopMobile" src="Images/LinkMain.png">
+</div>
+
+
+<div id="BottomContainer">
+    
+    <ul id="NameContact" class="BotomList">
+        <li id="NameHead" class="BottomHeading">Lukas Leins</li>
+        <li class="BottomListItem" id="BottomWriteup">Below you can find my personal phone number<br> and email. I will try to get back
+        to you as soon as <br> possible. I look forward to working with you.</li>
+        <li class="BottomListItem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: 604-701-7527</li>
+        <li class="BottomListItem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: lleins237@gmail.com</li>
+        <div id="GmailBottom">
+            <img class="ImageResize" src="Images/EmailMain.png" alt="Gmail"> 
+       </div>
+       
+       
+       <div id="PhoneBottom">
+            <img class="ImageResize" src="Images/PhoneMain.png" alt="Phone"> 
+       </div>
+    </ul>
+    
+    
+    
+    <ul id="QuickLinks" class="BotomList">
+        <li id="QuickHead" class="BottomHeading">Quick Links</li>
+        <li class="BottomListItem"><a href="HomePage.html">Home</a></li>
+        <li class="BottomListItem"><a href="Resume.html">Resume</a></li>
+        <li class="BottomListItem"><a href="Projects.html">Projects</a></li>
+        <li class="BottomListItem"><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <ul id="ContactMe" class="BotomList">
+        <li id="ContactHead" class="BottomHeading">Contact</li>
+        <li class="BottomListItem">Phone: 604-701-7527</li>
+        <li class="BottomListItem">Email: lleins237@gmail.com</li>
+        <li class="BottomListItem">Alternate Email: llleins23@gmail.com</li>
+        <li class="BottomListItem">Mail: Kalyna Dr. 6910, Agassiz, V0M 1A3</li>
+
+    </ul>
+
+    <div id="BottomSocials">
+        <div id="InstagramBottom" class="BottomSocialIcons">
+            <a href="https://www.instagram.com/nasawebb/?hl=en" target="_blank" > <img class="ImageResize" src="Images/InstaMain.png" alt="Instagram"> </a>
+        </div>
+        
+        
+        <div id="FacebookBottom" class="BottomSocialIcons">
+             <a href="https://www.facebook.com/NASAWebb/?ref=page_internal" target="_blank" > <img class="ImageResize" src="Images/FaceMain.png" alt="Facebook"> </a>
+        </div>
+        
+        
+        <div id="TwitterBottom" class="BottomSocialIcons">
+            <a href="https://twitter.com/NASAWebb?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" > <img class="ImageResize" src="Images/TwitterMain.png" alt="Twitter"> </a>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+</html>

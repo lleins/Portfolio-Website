@@ -1,0 +1,104 @@
+<html>
+
+
+<head>
+    <link href="Contact.css" type="text/css" rel="stylesheet">
+    <script src="Contact.js" defer></script>
+    <title>Home - Lukas Leins</title>
+</head>
+
+<body>
+
+<div id="NavigationBar">
+
+    <p class="Name">Lukas&nbsp;  <span id="TopText">  Leins</span></p>
+
+    <button onclick="location.href='HomePage.html'" class="Button Home">Home</button>
+    <button onclick="location.href='Resume.html'"class="Button Resume">Resume</button>
+    <button onclick="location.href='Projects.html'" class="Button Projects">Projects</button>
+    <button onclick="location.href='Contact.html'" class="Button About">Contact</button>
+</div>
+
+<div id="description">
+    <p class="WriteUp">Contact <span id="TopTextMe">Me</span></p>
+    <p class="BottomWriteUp">Below is my personal phone number and email. Feel free to fill out the contact form below for any questions you may have.</p>
+</div>
+
+
+<div id="ContactFormNotif">
+    <p id="ConfirmationNotif"   class="Notif">&nbsp; &nbsp; &nbsp; Message Was Succesfully Sent!</p>
+    <p id="ProblemNotif"   class="Notif">&nbsp; &nbsp; &nbsp; Message Cannot Be Sent At This Time.</p>
+    <img id="FailImg" class="NotifImg" src="Images/FailImg.png" alt="FailImg">
+    <img id="SuccessImg" class="NotifImg" src="Images/SuccessImg2.png" alt="SuccessImg">
+</div>
+
+
+
+
+
+<div id="Grid-Containter">
+
+    <div id="ContactFormContainer">
+
+        <p class="PhoneEmailText" id="ContactFormText">Contact Form</p>
+
+        <div id="NameInput">
+            <input type="text" id="NameTextBox" class="InputBox" placeholder="Name">
+        </div>
+    
+        <div id="NameInput">
+            <input type="text" id="EmailTextBox" class="InputBox" placeholder="Email">
+        </div>
+    
+        <div id="NameInput">
+            <textarea  type="text" id="MessageTextBox" class="InputMessageBox" placeholder="Message"></textarea>
+            <p id="CharactersRemain">Remaining Characters: <span id="charCount">500</span></p>
+        </div>
+
+        <div id="SendButton">
+            <button id="MainButton">SEND</button>
+        </div>
+
+        <div id="Confirmation">
+            <p id="Success">Message Sent!</p>
+            <p id="Fail">Error Try again</p>
+            <p id="JsInfo"></p>
+        </div>
+    </div>
+
+
+
+    <div id="EmailItem">
+        <img class="ContactImages" id="LocationImg" src="Images/ContactLocation.png">
+        <p class="ContactInfoTitle">Location</p>
+        <p class="ContactInfo">Kalyna Drive 6910<br>Agassiz V0M 1A3 BC Canada</p>
+
+        <img class="ContactImages" id="ContactPhoneImg" src="Images/ContactPhone.png">
+        <p class="ContactInfoTitle">Phone</p>
+        <p  id="Numbers">+1-604-701-7527 <br> +1-604-796-2941<p>
+
+        <img class="ContactImages" id="ContactEmailImg" src="Images/ContactEmail.png">
+        <p class="ContactInfoTitle" id="ContactEmailTitle">Email</p>
+        <p  id="Numbers">lleins237@gmail.com <br> llleins23@gmail.com<p>
+            
+        
+        
+        
+    </div>
+
+    
+
+</div>
+
+
+
+<div id="bottomspace"></div>
+
+
+</body>
+
+
+
+
+
+</html>

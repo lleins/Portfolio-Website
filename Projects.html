@@ -1,0 +1,140 @@
+<html>
+
+
+<head>
+    <link href="Projects.css" type="text/css" rel="stylesheet">
+    <script src="Projects.js" defer></script>
+    <title>Projects - Lukas Leins</title>
+</head>
+
+<body>
+
+<div id="NavigationBar">
+
+    <p class="Name">Lukas&nbsp;  <span id="TopText">  Leins</span></p>
+
+    <button onclick="location.href='HomePage.html'" class="Button Home">Home</button>
+    <button onclick="location.href='Resume.html'"class="Button Resume">Resume</button>
+    <button onclick="location.href='Projects.html'" class="Button Projects">Projects</button>
+    <button onclick="location.href='Contact.html'" class="Button About">Contact</button>
+</div>
+
+<!--Project Container-->
+
+<div id="Project_Titles">
+    <p id="Title">My <span id="Title_Secondary">Projects</span></p>
+    <p id="Bottom_WriteUp">Below you will find my completed and in progress projects, a brief description of what they are and what programming
+       languages they required.
+    </p>
+</div>
+
+<div id="Project_Container">
+    <div id="Proj_1" class="Proj_Container_Style">
+        <p id="Proj_1_Title" class="Proj_Title">Comic Finds</p>
+        <p id="Proj_1_Desc" class="Proj_Description">Online web application that
+            web scrapes the internet for comic books to buy.
+        </p>
+
+        <div id="Comic_Finds_Container" onmousemove="zoomImage(event, 'Comic_Img')" onmouseleave="resetImage('Comic_Img')" >
+            <img src="Images/ComicFinds.png" class="Proj_Img" id="Comic_Img">  
+        </div>
+
+        <img src="Images/html.png" class="Language_Img">
+        <img src="Images/Css.png"  class="Language_Img">
+        <img id="Css_Comic" src="Images/JS.png"  class="Language_Img">
+        <img src="Images/python.png"  class="Language_Img">
+        <button id="Comic_Finds_Button" class="View_Button">View Webpage</button>
+        <button id="Comic_Finds_Button" class="View_Button" onclick="Comic_Finds_GitOpen()">View On Github</button>
+    </div>
+
+
+    <div id="Proj_2" class="Proj_Container_Style">
+        <p id="Proj_2_Title" class="Proj_Title">AI Number Recognition</p>
+        <p id="Proj_2_Desc" class="Proj_Description">Online web application that uses
+            AI and machine learning processes to recognize what number you draw on screen.
+        </p>
+        <div id="Number_Recog_Container" onmousemove="zoomImage(event, 'Recog_Img')" onmouseleave="resetImage('Recog_Img')">
+            <img src="Images/NumberRecog.png" class="Proj_Img" id="Recog_Img">
+        </div>
+        <img id="html_AI" src="Images/html.png" class="Language_Img">
+        <img src="Images/Css.png"  class="Language_Img">
+        <img id="Css_Comic" src="Images/JS.png"  class="Language_Img">
+        <img src="Images/python.png"  class="Language_Img">
+        <button id="AI_Button" class="View_Button">In-Progress</button>
+        <button id="Comic_Finds_Button" class="View_Button" onclick="Number_Recog_GitOpen()">View On Github</button>
+    </div>
+
+
+
+    <div id="Proj_3" class="Proj_Container_Style">
+        <p id="Proj_3_Title" class="Proj_Title">Music Web Search</p>
+        <p id="Proj_3_Desc" class="Proj_Description">Online web application that
+            web scrapes the internet for new music to discover.</p>
+
+        <div id="Music_WebSearch_Container" onmousemove="zoomImage(event, 'Music_Img')" onmouseleave="resetImage('Music_Img')">
+            <img src="Images/MusicWebSearch.png" class="Proj_Img" id="Music_Img">
+        </div>
+       
+        <img id="html_Music" src="Images/html.png" class="Language_Img">
+        <img src="Images/Css.png"  class="Language_Img">
+        <img id="Css_Comic" src="Images/JS.png"  class="Language_Img">
+        <button id="Music_WebSearch_Button" class="View_Button">View Webpage</button>
+        <button id="Comic_Finds_Button" class="View_Button" onclick="Music_Websearch_GitOpen()">View On Github</button>
+    </div>
+
+
+    <div id="Proj_4" class="Proj_Container_Style">
+        <p id="Proj_4_Title" class="Proj_Title">Online Notes</p>
+        <p id="Proj_4_Desc" class="Proj_Description">Online note taker that has many 'gimmick' features.</p>
+        
+        <div id="Online_Notes_Container" onmousemove="zoomImage(event, 'Online_Img')" onmouseleave="resetImage('Online_Img')">
+            <img src="Images/OnlineNotes.png" class="Proj_Img" id="Online_Img">
+        </div>
+
+        <img src="Images/html.png" class="Language_Img">
+        <img src="Images/Css.png"  class="Language_Img">
+        <img id="Css_Comic" src="Images/JS.png"  class="Language_Img">
+        <img src="Images/python.png"  class="Language_Img">
+        <button id="Online_Finds_Button" class="View_Button">View Webpage</button>
+        <button id="Comic_Finds_Button" class="View_Button" onclick="Online_Notes_GitOpen()">View On Github</button>
+    </div>
+
+
+    <div id="Proj_5" class="Proj_Container_Style">
+        <p id="Proj_5_Title" class="Proj_Title">Note Taker</p>
+        <p id="Proj_5_Desc" class="Proj_Description">Offline note taker for your desktop to keep track of reminders and notes</p>
+        
+        <div id="Note_Taker_Container" onmousemove="zoomImage(event, 'Notes_Img')" onmouseleave="resetImage('Notes_Img')">
+            <img src="Images/NoteTaker.png" class="Proj_Img" id="Notes_Img">
+        </div>
+        
+        <img id="Python_NoteTaker" src="Images/python.png"  class="Language_Img">
+        <button id="Note_Taker_Button" class="View_Button">Download</button>
+        <button id="Comic_Finds_Button" class="View_Button" onclick="Note_Taker_GitOpen()">View On Github</button>
+    </div>
+
+
+    <div id="Proj_6" class="Proj_Container_Style">
+        <p id="Proj_6_Title" class="Proj_Title">Photo Encrypter</p>
+        <p id="Proj_6_Desc" class="Proj_Description">Offline application that encrypts any photos you want.</p>
+        
+        <div id="Photo_Encrypter_Container" onmousemove="zoomImage(event, 'Photo_Img')" onmouseleave="resetImage('Photo_Img')">
+            <img src="Images/PhotoEncrypter.png" class="Proj_Img" id="Photo_Img">
+        </div>
+        
+        
+        <img id="Python_NoteTaker" src="Images/python.png"  class="Language_Img">
+        <button id="Photo_Encypter_Button" class="View_Button">Download</button>
+        <button id="Comic_Finds_Button" class="View_Button" onclick="Photo_Encrypter_GitOpen()">View On Github</button>
+    </div>
+</div>
+
+<!--Project Container-->
+
+</body>
+
+
+
+
+
+</html>

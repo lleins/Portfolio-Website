@@ -1,0 +1,359 @@
+
+body{
+    background-color: rgb(10, 14, 20);
+    background-size: cover;
+    background-blend-mode: multiply;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    max-height: 1000px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+
+#NavigationBar{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /*color: #8c8c8c;*/
+    z-index: 300;
+    background-color: rgba(21, 28, 41, 0);
+    backdrop-filter: blur(0px);
+    transition: .3s;
+    background: transparent;
+    transition: background 0.5s ease;
+}
+
+#NavigationBar.solid {
+    background: rgb(21, 28, 41); 
+}
+
+a{
+    text-decoration: none;
+    /*color: #8c8c8c;*/
+    cursor: pointer;
+    color: rgb(145, 145, 145);
+}
+
+#UserPic{
+
+    transform: scale(0.8);
+
+}
+
+
+.Name{
+    /*color: rgb(103, 161, 255);*/
+    color: white;
+    padding-top: 0%;
+    flex-basis: 39%;
+    display: flex;
+    left: 50%;
+    text-shadow: 1px 1px 2px #000000;
+    padding-left: 14%;
+    cursor: default;
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+
+
+#TopText{
+    color: rgb(103, 161, 255); 
+    transition: .3s;
+}
+
+
+
+.Button{
+    font-family: Calibri;
+    transition: 0.3s;
+    border: none;
+    /*color: #969696;*/
+    color: white;
+    background: linear-gradient(white, white) bottom / 0 .15em no-repeat;
+    padding: 25px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-position: center bottom;
+    height: 0px;
+    margin: 28px;
+    margin-top: 0px;
+    margin-bottom: -14px;
+}
+
+
+.Button:hover{
+    background-size: 100% .15em;
+    filter: brightness(150%);
+    transition: 0.4s;
+    color: white;
+}
+
+
+
+.Btn{
+    border: none;
+    padding: 10px 10px;
+    transition: 0.5s
+}
+
+
+
+
+
+/*Project Container*/
+
+#Project_Titles{
+    position: flex;
+    margin-top: 150px;
+}
+
+
+#Title{
+    position: flex;
+    cursor: default;
+    color: white;
+    font-family: calibri;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    
+}
+
+#Title_Secondary{
+    color: rgb(103, 161, 255);
+}
+
+#Bottom_WriteUp{
+    color: rgb(255, 255, 255, 0.7);
+    font-family: calibri;
+    cursor: default;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Project_Container{
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: 5000px;
+    background-color: rgba(12, 15, 22, .9);
+    grid-template-columns: repeat(1, 1fr); /* Define the number of columns */
+    grid-template-rows: repeat(6, 1fr); 
+    
+}
+
+
+.Proj_Container_Style{
+    background-color: rgb(25, 37, 54);
+    width: 700px;
+    height: 500px;
+    margin-bottom: 250px;
+    margin-top: 150px;
+    margin-left: 200px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px rgb(27, 27, 27);
+    
+
+
+}   
+
+
+
+.Proj_Title{
+    position: relative;
+    color: white;
+    font-family: calibri;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    top: 20px;
+    margin-left: 40px;
+}
+
+.Proj_Description{
+    position: relative;
+    top: -50px;
+    margin-left: 40px;
+    color: rgb(255, 255, 255, 0.7);
+    font-family: calibri;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 350px;
+    border-right: 2px solid rgba(100, 100, 100);
+    height: 70px;
+    padding-top: 50px;
+}
+
+.Proj_Img{
+    position: relative;
+    width: 620px;
+    height: 300px;
+    border-radius: 2px;
+    filter: brightness(1);
+    display: block;
+}
+
+#Comic_Finds_Container{
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+}
+
+#Number_Recog_Container{
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+}
+
+#Music_WebSearch_Container{
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+}
+
+#Online_Notes_Container{
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+}
+
+#Note_Taker_Container{
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+
+}
+
+#Photo_Encrypter_Container{
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+
+}
+
+
+#Proj_Container_Style{
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+
+}
+
+
+.Language_Img{
+    position: relative;
+    top: -480px;
+    left: 460px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Css_Comic{
+    transform: scale(1.3);
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+
+.View_Button{
+    position: relative;
+    background-color: transparent;
+    font-family: Calibri;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .3s;
+    font-weight: bold;
+    transition: border-color 0.3s ease-in-out;
+    transition: .3s;
+    cursor: pointer;
+    top: -420px;
+    left: 225px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+
+.View_Button:hover{
+    border: 1px solid rgb(103, 161, 255);
+    color: rgb(103, 161, 255);
+    transform: scale(1.05);
+
+}
+
+#Music_WebSearch_Button{
+   margin-left: 25px;
+}
+
+#html_Music{
+    margin-left: 30px;
+}
+
+#AI_Button{
+    cursor: not-allowed;
+    margin-left: 10px;
+}
+
+#AI_Button:hover{
+   color: white;
+   transform: scale(1);
+   border: 1px solid white;
+}
+
+
+#Python_NoteTaker{
+    margin-left: 70px;
+}
+
+#Note_Taker_Button{
+    margin-left: 85px;
+}
+
+#Photo_Encypter_Button{
+    margin-left: 80px;
+}
+/*Project Container*/
+
+

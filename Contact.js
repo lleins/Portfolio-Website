@@ -1,0 +1,146 @@
+/*Background Image Change ----------------------------------------------------*/
+
+function randomNumber(min, max) { 
+  let numb = Math.random() * (max - min) + min;
+  return parseInt(numb);
+} 
+
+function RandomBackground(){
+  const image = [];
+  image[0] = "";
+  image[1] = "url('Images/BackMain1.jpg')";
+  image[2] = "url('Images/BackMain2.jpg')";
+  image[3] = "url('Images/BackMain3.jpg')";
+  image[4] = "url('Images/BackMain4.jpg')";
+  image[5] = "url('Images/BackMain5.jpg')";
+  image[6] = "url('Images/BackMain6.jpg')";
+  image[7] = "url('Images/BackMain7.jpg')";
+  image[8] = "url('Images/BackMain8.jpg')";
+  let numb = randomNumber(1, 9);
+  return image[numb];
+}
+
+var myDiv = document.getElementById("description");
+
+myDiv.style.backgroundImage = RandomBackground();
+
+/*Background Image Change ----------------------------------------------------*/
+
+
+
+/*Navigation Bar scroll event: Transparency & last name color -----------------*/
+
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('NavigationBar');
+  var name = document.getElementById('TopText');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var solidThreshold = 50; // Adjust this value to determine when to make the background solid
+
+  if (scrollTop > solidThreshold) {
+    name.style.color = "white";
+    navbar.classList.add('solid');
+  } else {
+    name.style.color = "rgb(103, 161, 255)";
+    navbar.classList.remove('solid');
+  }
+});
+/*Navigation Bar scroll event: Transparency & last name color -----------------*/
+
+
+
+/*TextArea Character Count Restriction ----------------------------------*/ 
+
+const MessageTextArea = document.getElementById('MessageTextBox');
+const MessageCharCount = document.getElementById('charCount');
+
+const MaxCharLim = 500;
+
+function UpdateCharCount(){
+
+  const remainingChars = MaxCharLim - MessageTextArea.value.length;
+  MessageCharCount.textContent = Math.max(remainingChars, 0);
+
+  if (remainingChars < 0){
+    MessageTextArea.value = MessageTextArea.value.slice(0, MaxCharLim)
+  }
+
+}
+
+MessageTextArea.addEventListener('input', UpdateCharCount);
+
+UpdateCharCount();
+
+/*TextArea Character Count Restriction ----------------------------------*/ 
+
+
+
+
+/*Flask Python Communication for Contact Form -----------------*/
+const Success = document.getElementById('ConfirmationNotif');
+const Fail = document.getElementById('ProblemNotif');
+const JsInfoText = document.getElementById('JsInfo');
+const submitButton = document.getElementById('MainButton');
+const SuccessImg = document.getElementById('SuccessImg');
+const FailImg = document.getElementById('FailImg');
+
+function hideSuccess(){
+  Success.style.display = 'none';
+  SuccessImg.style.display = 'none';
+}
+
+function hideFail(){
+  Fail.style.display = 'none';
+  FailImg.style.display = 'none';
+}
+
+const TimetoHide = 6000;
+
+
+submitButton.addEventListener('click', function() {
+  const NameText = document.getElementById('NameTextBox').value;      //Name Text Box
+  const ClearNameText = document.getElementById('NameTextBox');
+
+  const EmailText = document.getElementById('EmailTextBox').value;  //Email Text Box
+  const ClearEmailText = document.getElementById('EmailTextBox');
+
+  const BodyText = document.getElementById('MessageTextBox').value;
+  const ClearBodyText = document.getElementById('MessageTextBox');
+  
+  const Data = {Name: NameText, Email: EmailText , Body: BodyText};
+  
+  
+  fetch('http://127.0.0.1:5000/process_data', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(Data)
+  })
+  .then(response => response.json())
+  .then(data => {
+      const outputResult = document.getElementById('outputResult');
+      Success.style.display = 'flex';
+      SuccessImg.style.display = 'flex';
+      ClearNameText.value='';
+      ClearEmailText.value='';
+      ClearBodyText.value='';
+      setTimeout(hideSuccess, TimetoHide);
+  })
+  .catch(error => {
+      console.error('An error occurred:', error);
+      Fail.style.display = 'flex';
+      FailImg.style.display = 'flex';
+      setTimeout(hideFail, TimetoHide);
+  });
+});
+
+/*Flask Python Communication for Contact Form -----------------*/
+
+
+
+
+
+
+
+
+
