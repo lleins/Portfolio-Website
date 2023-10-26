@@ -1,11 +1,11 @@
 /*Background Image Change ----------------------------------------------------*/
 
-function randomNumber(min, max) { 
+function randomNumber(min, max) {
   let numb = Math.random() * (max - min) + min;
   return parseInt(numb);
-} 
+}
 
-function RandomBackground(){
+function RandomBackground() {
   const image = [];
   image[0] = "";
   image[1] = "url('Images/BackMain1.jpg')";
@@ -30,7 +30,7 @@ myDiv.style.backgroundImage = RandomBackground();
 
 /*Navigation Bar scroll event: Transparency & last name color -----------------*/
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   var navbar = document.getElementById('NavigationBar');
   var name = document.getElementById('TopText');
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -48,19 +48,19 @@ window.addEventListener('scroll', function() {
 
 
 
-/*TextArea Character Count Restriction ----------------------------------*/ 
+/*TextArea Character Count Restriction ----------------------------------*/
 
 const MessageTextArea = document.getElementById('MessageTextBox');
 const MessageCharCount = document.getElementById('charCount');
 
 const MaxCharLim = 500;
 
-function UpdateCharCount(){
+function UpdateCharCount() {
 
   const remainingChars = MaxCharLim - MessageTextArea.value.length;
   MessageCharCount.textContent = Math.max(remainingChars, 0);
 
-  if (remainingChars < 0){
+  if (remainingChars < 0) {
     MessageTextArea.value = MessageTextArea.value.slice(0, MaxCharLim)
   }
 
@@ -70,9 +70,18 @@ MessageTextArea.addEventListener('input', UpdateCharCount);
 
 UpdateCharCount();
 
-/*TextArea Character Count Restriction ----------------------------------*/ 
+/*TextArea Character Count Restriction ----------------------------------*/
 
 
+function MenuButton() {
+  const MenuContainer = document.getElementById("MenuButtonMenuContainer");
+  MenuContainer.style.display = "flex";
+}
+
+function CloseMenuButton() {
+  const MenuContainer = document.getElementById("MenuButtonMenuContainer");
+  MenuContainer.style.display = "none";
+}
 
 
 /*Flask Python Communication for Contact Form -----------------*/
@@ -83,12 +92,12 @@ const submitButton = document.getElementById('MainButton');
 const SuccessImg = document.getElementById('SuccessImg');
 const FailImg = document.getElementById('FailImg');
 
-function hideSuccess(){
+function hideSuccess() {
   Success.style.display = 'none';
   SuccessImg.style.display = 'none';
 }
 
-function hideFail(){
+function hideFail() {
   Fail.style.display = 'none';
   FailImg.style.display = 'none';
 }
@@ -96,7 +105,7 @@ function hideFail(){
 const TimetoHide = 6000;
 
 
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', function () {
   const NameText = document.getElementById('NameTextBox').value;      //Name Text Box
   const ClearNameText = document.getElementById('NameTextBox');
 
@@ -105,42 +114,84 @@ submitButton.addEventListener('click', function() {
 
   const BodyText = document.getElementById('MessageTextBox').value;
   const ClearBodyText = document.getElementById('MessageTextBox');
-  
-  const Data = {Name: NameText, Email: EmailText , Body: BodyText};
-  
-  
+
+  const Data = { Name: NameText, Email: EmailText, Body: BodyText };
+
+
   fetch('http://127.0.0.1:5000/process_data', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(Data)
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(Data)
   })
-  .then(response => response.json())
-  .then(data => {
+    .then(response => response.json())
+    .then(data => {
       const outputResult = document.getElementById('outputResult');
       Success.style.display = 'flex';
       SuccessImg.style.display = 'flex';
-      ClearNameText.value='';
-      ClearEmailText.value='';
-      ClearBodyText.value='';
+      ClearNameText.value = '';
+      ClearEmailText.value = '';
+      ClearBodyText.value = '';
       setTimeout(hideSuccess, TimetoHide);
-  })
-  .catch(error => {
+    })
+    .catch(error => {
       console.error('An error occurred:', error);
       Fail.style.display = 'flex';
       FailImg.style.display = 'flex';
       setTimeout(hideFail, TimetoHide);
-  });
+    });
 });
 
 /*Flask Python Communication for Contact Form -----------------*/
 
 
 
+const items = document.querySelectorAll('.Load_Item');
+
+function staggeredLoad() {
+  items.forEach((item, index) => {
+    setTimeout(() => {
+      item.style.opacity = 1;
+
+    }, (index + 1) * 400); // 1000 milliseconds (1 second) delay between each item
+  });
+}
+
+staggeredLoad();
 
 
 
+function Flask_Server_Status() {
+  const Online_Status = document.querySelectorAll(".Online");
+  const Offline_Status = document.querySelectorAll(".Offline");
 
+  const Data = "";
 
+  fetch('http://127.0.0.1:5000/process_data', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(Data)
+  })
+    .then(response => response.json())
+    .then(data => {
+      if (data.response === "1") {
+        Offline_Status[0].style.display = "none";
+        Offline_Status[1].style.display = "none";
+        Online_Status[0].style.display = "block";
+        Online_Status[1].style.display = "block";
+      } else {
+        Offline_Status[0].style.display = "block";
+        Offline_Status[1].style.display = "block";
+      }
 
+    })
+    .catch(error => {
+
+    });
+
+}
+
+Flask_Server_Status();

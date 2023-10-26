@@ -85,14 +85,17 @@ CORS(app)
 def process_data():
     data = request.get_json()  # Assuming your JavaScript sends data as JSON
 
-    NameData = data['Name']
-    EmailData = data['Email']
-    BodyData = data['Body']
+    if (data == ""):
+        ""
+    else:
+        NameData = data['Name']
+        EmailData = data['Email']
+        BodyData = data['Body']
 
-    Send_Email(NameData, EmailData, BodyData) #Sends Email with JSON Parsed Data from Flask Server 
+        Send_Email(NameData, EmailData, BodyData) #Sends Email with JSON Parsed Data from Flask Server 
 
 
-    result = {'message': 'Data received successfully and processed!'}
+    result = {"response":"1"}
     return jsonify(result)
 
 if __name__ == '__main__':

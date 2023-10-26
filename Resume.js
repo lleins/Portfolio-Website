@@ -1,29 +1,29 @@
 
-function randomNumber(min, max) { 
-    let numb = Math.random() * (max - min) + min;
-    return parseInt(numb);
-} 
+function randomNumber(min, max) {
+  let numb = Math.random() * (max - min) + min;
+  return parseInt(numb);
+}
 
-function RandomBackground(){
-    const image = [];
-    image[0] = "";
-    image[1] = "url('Images/BackMain1.jpg')";
-    image[2] = "url('Images/BackMain2.jpg')";
-    image[3] = "url('Images/BackMain3.jpg')";
-    image[4] = "url('Images/BackMain4.jpg')";
-    image[5] = "url('Images/BackMain5.jpg')";
-    image[6] = "url('Images/BackMain6.jpg')";
-    image[7] = "url('Images/BackMain7.jpg')";
-    image[8] = "url('Images/BackMain8.jpg')";
-    let numb = randomNumber(1, 9);
-    return image[numb];
+function RandomBackground() {
+  const image = [];
+  image[0] = "";
+  image[1] = "url('Images/BackMain1.jpg')";
+  image[2] = "url('Images/BackMain2.jpg')";
+  image[3] = "url('Images/BackMain3.jpg')";
+  image[4] = "url('Images/BackMain4.jpg')";
+  image[5] = "url('Images/BackMain5.jpg')";
+  image[6] = "url('Images/BackMain6.jpg')";
+  image[7] = "url('Images/BackMain7.jpg')";
+  image[8] = "url('Images/BackMain8.jpg')";
+  let numb = randomNumber(1, 9);
+  return image[numb];
 }
 
 var myDiv = document.getElementById("description");
 
 myDiv.style.backgroundImage = RandomBackground();
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   var navbar = document.getElementById('NavigationBar');
   var name = document.getElementById('TopText');
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -40,13 +40,41 @@ window.addEventListener('scroll', function() {
 
 
 function downloadResume() {
-  var url = 'C:\\Users\\Big_T\\OneDrive\\Desktop\\Employee\\Resume 2023.pdf'; // Replace with the actual URL of your resume file
-  
-  window.open(url, '_blank');
-  
+  var url = 'Lukas Leins Resume 2023 Updated (1).pdf'; // Replace with the actual URL of your resume file
 
-  
+  window.open(url, '_blank');
+
+
+
   link.click();
 }
 
+//For Mobile Menu button----------------------------------------------------
+function MenuButton() {
+  const MenuContainer = document.getElementById("MenuButtonMenuContainer");
+  MenuContainer.style.display = "flex";
+}
 
+function CloseMenuButton() {
+  const MenuContainer = document.getElementById("MenuButtonMenuContainer");
+  MenuContainer.style.display = "none";
+}
+//For Mobile Menu button----------------------------------------------------
+
+
+
+
+
+
+const items = document.querySelectorAll('.Load_Item');
+
+function staggeredLoad() {
+  items.forEach((item, index) => {
+    setTimeout(() => {
+      item.style.opacity = 1;
+
+    }, (index + 1) * 400); // 1000 milliseconds (1 second) delay between each item
+  });
+}
+
+staggeredLoad();

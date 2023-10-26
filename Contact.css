@@ -1,5 +1,4 @@
-
-body{
+body {
     background-color: rgb(10, 14, 20);
     background-size: cover;
     background-blend-mode: multiply;
@@ -12,13 +11,13 @@ body{
     max-height: 1000px;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
+
 }
 
 
 
 
-#NavigationBar{
+#NavigationBar {
     position: fixed;
     left: 0px;
     right: 0px;
@@ -36,24 +35,24 @@ body{
 }
 
 #NavigationBar.solid {
-    background: rgb(21, 28, 41); 
+    background: rgb(21, 28, 41);
 }
 
-a{
+a {
     text-decoration: none;
     /*color: #8c8c8c;*/
     cursor: pointer;
     color: rgb(145, 145, 145);
 }
 
-#UserPic{
+#UserPic {
 
     transform: scale(0.8);
 
 }
 
 
-.Name{
+.Name {
     /*color: rgb(103, 161, 255);*/
     color: white;
     padding-top: 0%;
@@ -72,14 +71,14 @@ a{
 
 
 
-#TopText{
-    color: rgb(103, 161, 255); 
+#TopText {
+    color: rgb(103, 161, 255);
     transition: .3s;
 }
 
 
 
-.Button{
+.Button {
     font-family: Calibri;
     transition: 0.3s;
     border: none;
@@ -97,7 +96,7 @@ a{
 }
 
 
-.Button:hover{
+.Button:hover {
     background-size: 100% .15em;
     filter: brightness(150%);
     transition: 0.4s;
@@ -106,28 +105,29 @@ a{
 
 
 
-.Btn{
+.Btn {
     border: none;
     padding: 10px 10px;
     transition: 0.5s
 }
 
-#TopTextMe{
+#TopTextMe {
     color: rgb(103, 161, 255);
 }
 
-#description{
+#description {
     position: relative;
     width: 100%;
-    height: 45%;
+    height: 55%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(12, 15, 22, .9);
     background-blend-mode: multiply;
+    top: -10%;
 }
 
-.WriteUp{
+.WriteUp {
     position: relative;
     top: 35%;
     cursor: default;
@@ -142,60 +142,69 @@ a{
     text-shadow: 2px 2px 4px #000000;
     margin-left: 10%;
     margin-right: 10%;
-    animation-duration: .7s; 
-    animation-timing-function: ease-out; 
-    animation-fill-mode: forwards; 
-    
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
 }
 
-.BottomWriteUp{
-    margin-top: 10%;
+.Load_Item {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.BottomWriteUp {
+    position: relative;
+    top: 30%;
     text-align: center;
     color: rgb(255, 255, 255, 0.7);
     font-family: calibri;
     cursor: default;
     letter-spacing: 1px;
     font-size: 15px;
-}   
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 
-#Grid-Containter{
+#Grid-Containter {
     margin-top: 3%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 
 }
 
 
 
-#EmailImg{
+#EmailImg {
     transform: scale(.75);
 
 
 }
 
-#CharactersRemain{
+#CharactersRemain {
     position: relative;
     font-family: Calibri;
     color: rgb(255, 255, 255);
     font-size: 12px;
     left: 165px;
-    
+
 }
 
 
-#EmailItem{
+#EmailItem {
     text-align: center;
     border-left: 2px solid rgba(100, 100, 100);
     margin-left: 100px;
 }
 
-#LocationImg{
+#LocationImg {
     margin-top: 20px;
 }
 
-.ContactInfo{
+.ContactInfo {
 
     font-family: Calibri;
     color: rgba(200, 200, 200);
@@ -205,19 +214,19 @@ a{
     line-height: 20px;
 }
 
-#ContactPhoneImg{
+#ContactPhoneImg {
     margin-top: 40px;
 }
 
-#ContactEmailImg{
+#ContactEmailImg {
     margin-top: 40px;
 }
 
-#ContactEmailTitle{
+#ContactEmailTitle {
     margin-top: -10px;
 }
 
-#Numbers{
+#Numbers {
     line-height: 20px;
     font-family: Calibri;
     color: rgba(200, 200, 200);
@@ -226,7 +235,7 @@ a{
     margin-top: -25px;
 }
 
-.ContactInfoTitle{
+.ContactInfoTitle {
     font-family: Calibri;
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -236,32 +245,32 @@ a{
 }
 
 
-#ContactFormContainer{
+#ContactFormContainer {
     margin-top: 0%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     margin-left: 20%;
-    
-    
+
+
 }
 
-#ContactFormText{
+#ContactFormText {
     text-align: center;
     font-size: 30px;
     color: rgb(255, 255, 255);
     font-variant: small-caps;
     font-family: Calibri;
-   
+
 }
 
-#NameInput{
-    
+#NameInput {
+
     text-align: center;
-   
+
 }
 
-.InputBox{
+.InputBox {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 8px;
@@ -276,7 +285,7 @@ a{
     resize: vertical;
 }
 
-.InputMessageBox{
+.InputMessageBox {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 8px;
@@ -293,10 +302,13 @@ a{
 }
 
 input::placeholder {
-    color: rgb(200, 200, 200); /* Set your desired placeholder color here */
+    color: rgb(200, 200, 200);
+    /* Set your desired placeholder color here */
 }
+
 input::placeholder {
-    color: rgb(200, 200, 200); /* Set your desired placeholder color here */
+    color: rgb(200, 200, 200);
+    /* Set your desired placeholder color here */
 }
 
 
@@ -305,7 +317,8 @@ input:focus {
 }
 
 textarea::placeholder {
-    color: rgb(200, 200, 200); /* Set your desired placeholder color here */
+    color: rgb(200, 200, 200);
+    /* Set your desired placeholder color here */
 }
 
 
@@ -314,7 +327,7 @@ textarea:focus {
 }
 
 
-#MainButton{
+#MainButton {
     background-color: transparent;
     font-family: Calibri;
     color: white;
@@ -326,29 +339,29 @@ textarea:focus {
     font-weight: bold;
     transition: border-color 0.3s ease-in-out;
     transition: .3s;
-    cursor: pointer; 
+    cursor: pointer;
     border-radius: 0px;
 }
 
-#MainButton:hover{
+#MainButton:hover {
     border: 1px solid rgb(103, 161, 255);
     transform: scale(1.05);
     color: rgb(103, 161, 255);
 }
 
-#SendButton{
+#SendButton {
     text-align: center;
 }
 
 
-#bottomspace{
+#bottomspace {
 
     margin-bottom: 1500px;
 
 }
 
 
-#Success{
+#Success {
     color: green;
     font-family: calibri;
     font-size: 12px;
@@ -356,28 +369,28 @@ textarea:focus {
 }
 
 
-#Fail{
+#Fail {
     color: red;
     font-family: calibri;
     font-size: 12px;
     display: none;
 }
 
-#JsInfo{
+#JsInfo {
     color: rgb(255, 255, 255);
     font-family: calibri;
     font-size: 12px;
-    
+
 }
 
-.Notif{
+.Notif {
     font-family: Calibri;
     font-size: 12px;
     letter-spacing: 1px;
 }
 
 
-#ConfirmationNotif{
+#ConfirmationNotif {
     display: none;
     position: fixed;
     left: 20px;
@@ -392,7 +405,7 @@ textarea:focus {
     border-radius: 4px;
 }
 
-#ProblemNotif{
+#ProblemNotif {
     display: none;
     position: fixed;
     left: 20px;
@@ -409,20 +422,387 @@ textarea:focus {
 
 
 
-.NotifImg{
+.NotifImg {
     position: fixed;
     top: 112px;
     left: 34px;
     transform: scale(.6);
-    
+
 
 }
 
-#FailImg{
+#FailImg {
     display: none;
 }
 
-#SuccessImg{
+#SuccessImg {
     display: none;
 }
 
+
+#MenuButtonContainer {
+    display: none;
+    justify-content: right;
+    z-index: 999;
+
+}
+
+#Menu {
+    transform: scale(.6);
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    right: 55px;
+    z-index: 999;
+
+}
+
+#Online_Offline {
+    position: absolute;
+    font-family: calibri;
+    font-size: 12px;
+    left: 42%;
+}
+
+#Online_Status {
+    position: absolute;
+    color: #48ff51;
+    font-family: calibri;
+    font-size: 12px;
+    top: 65px;
+}
+
+#Online_Icon {
+    position: absolute;
+    background-color: #48ff51;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #2f4730;
+    animation: OnlineAnim 2s infinite;
+    top: 65px;
+    left: 45px;
+}
+
+#Offline_Status {
+    position: absolute;
+    color: #ff4949;
+    padding: 7px;
+    padding-right: 40px;
+    top: 57px;
+}
+
+#Offline_Icon {
+    position: absolute;
+    background-color: #ff4848;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: OfflineAnim 1.5s ease-in-out infinite;
+    top: 65px;
+    left: 55px;
+}
+
+.Offline {
+    display: block;
+}
+
+.Online {
+    display: none;
+}
+
+@keyframes OfflineAnim {
+
+    0%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+
+    40%,
+    50% {
+        transform: translateX(20px);
+
+    }
+}
+
+@keyframes OnlineAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+        /* Adjust the size for the pulse effect */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+#MenuButton_Menu {
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba(32, 43, 63);
+    height: 100%;
+    width: 65%;
+    top: 0;
+    right: 0;
+}
+
+
+.Style {
+    font-size: 12px;
+    font-family: Calibri;
+    color: white;
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.MenuListItem {
+    list-style: none;
+    font-size: 16px;
+}
+
+#MenuButtonMenuContainer {
+    display: none;
+    animation: fadeIn 0.2s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+    from {
+
+        transform: translatex(200px);
+        /* Initial position if needed */
+    }
+
+    to {
+
+        transform: translatex(0);
+        /* Final position */
+    }
+}
+
+#CloseMenuImg {
+    cursor: pointer;
+    transform: scale(.5);
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+@media screen and (max-width: 850px) {
+
+
+
+    #EmailItem {
+        position: absolute;
+        border-left: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        top: 1100px;
+        grid-gap: 5%;
+        left: 35%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+
+    #ContactEmailImg {
+        padding-bottom: 20px;
+    }
+
+    #Phone {
+        margin-top: -20px;
+    }
+
+    #Email {
+        margin-top: -20px;
+    }
+
+    #ContactFormContainer {
+        position: absolute;
+        top: 700px;
+        left: 30%;
+        transform: translate(-50%, -50%);
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 680px) {
+
+    #EmailItem {
+        position: absolute;
+        border-left: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-gap: 5%;
+        left: 35%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+
+    #MenuButtonContainer {
+        display: flex;
+        justify-content: right;
+        z-index: 999;
+    }
+
+    #Menu {
+        transform: scale(.5);
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 35px;
+        z-index: 999;
+    }
+
+    #ButtonContainer {
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Button {
+        display: none;
+    }
+
+    .Name {
+        /*color: rgb(103, 161, 255);*/
+        color: white;
+        padding-top: 0%;
+        flex-basis: 39%;
+        display: flex;
+        left: 50%;
+        text-shadow: 1px 1px 2px #000000;
+        padding-left: 9%;
+        cursor: default;
+        font-family: Calibri;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-variant: small-caps;
+    }
+
+    #ContactFormContainer {
+        transform: translate(-50%, -50%);
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 530px) {
+
+    #EmailItem {
+        position: absolute;
+        border-left: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5%;
+        left: 23%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+
+    .WriteUp {
+        font-size: 30px;
+    }
+
+    .InputBox {
+        width: 300px;
+    }
+
+    .InputMessageBox {
+        width: 300px;
+    }
+
+    #CharactersRemain {
+        position: absolute;
+        margin-left: -20px;
+
+    }
+
+    .ContactInfoTitle {
+        font-size: 25px;
+    }
+
+    .ContactInfo {
+        font-size: 13px;
+    }
+
+    #Numbers {
+        font-size: 13px;
+    }
+
+    .ContactImages {
+        transform: scale(.9);
+    }
+
+
+    #MainButton {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    #EmailItem {
+        position: absolute;
+        border-left: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 650px;
+        grid-gap: 5%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+
+    .WriteUp {
+        font-size: 35px;
+    }
+
+    .InputBox {
+        width: 200px;
+    }
+
+    .InputMessageBox {
+        width: 200px;
+    }
+
+    #CharactersRemain {
+        margin-left: -170px;
+    }
+
+    .ContactInfoTitle {
+        font-size: 16px;
+    }
+
+    .ContactInfo {
+        font-size: 10px;
+    }
+
+    #Numbers {
+        font-size: 10px;
+    }
+
+    .ContactImages {
+        transform: scale(.6);
+    }
+}

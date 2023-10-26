@@ -1,6 +1,5 @@
-
-body{
-    background-color: rgba(12, 15, 22, .9);
+body {
+    background-color: rgba(12, 15, 22, 1);
     background-image: url("BackMain1.jpg");
     background-size: cover;
     background-blend-mode: multiply;
@@ -13,14 +12,17 @@ body{
     /*max-height: 1000px;*/
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
-   
+
+
+}
+
+.Load_Item {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 }
 
 
-
-
-#NavigationBar{
+#NavigationBar {
     position: fixed;
     left: 0px;
     right: 0px;
@@ -34,28 +36,27 @@ body{
     backdrop-filter: blur(0px);
     transition: .3s;
     background: transparent;
-    transition: background 0.5s ease;
 }
 
 #NavigationBar.solid {
-    background: rgb(21, 28, 41); 
+    background: rgb(21, 28, 41);
 }
 
-a{
+a {
     text-decoration: none;
     /*color: #8c8c8c;*/
     cursor: pointer;
     color: rgb(145, 145, 145);
 }
 
-#UserPic{
+#UserPic {
 
     transform: scale(0.8);
 
 }
 
 
-.Name{
+.Name {
     /*color: rgb(103, 161, 255);*/
     color: white;
     padding-top: 0%;
@@ -74,18 +75,18 @@ a{
 
 
 
-#TopText{
-    color: rgb(103, 161, 255); 
+#TopText {
+    color: rgb(103, 161, 255);
     transition: .3s;
 }
 
 
 
-.Button{
+.Button {
     font-family: Calibri;
     transition: 0.3s;
     border: none;
-    /*color: #969696;*/
+
     color: white;
     background: linear-gradient(white, white) bottom / 0 .15em no-repeat;
     padding: 25px 0px;
@@ -99,7 +100,7 @@ a{
 }
 
 
-.Button:hover{
+.Button:hover {
     background-size: 100% .15em;
     filter: brightness(150%);
     transition: 0.4s;
@@ -107,16 +108,54 @@ a{
 }
 
 
-
-.Btn{
+.Btn {
     border: none;
     padding: 10px 10px;
     transition: 0.5s
 }
 
+#Main_Heading_1 {
+
+    opacity: 1;
+}
+
+#Main_Heading_2 {
+    position: absolute;
+    opacity: 0;
+}
+
+#Main_Heading_3 {
+    position: absolute;
+    opacity: 0;
+}
+
+#Main_Heading_4 {
+    position: absolute;
+    opacity: 0;
+}
+
+#Main_Heading_5 {
+    position: absolute;
+    opacity: 0;
+}
+
+#Main_Heading_6 {
+    position: absolute;
+    opacity: 0;
+}
+
+#Main_Heading_7 {
+    position: absolute;
+    opacity: 0;
+}
+
+#Main_Heading_8 {
+    position: absolute;
+    opacity: 0;
+}
 
 
-.MainTextTop{
+.MainTextTop {
     position: relative;
     cursor: default;
     color: white;
@@ -127,23 +166,25 @@ a{
     line-height: 1.2;
     font-variant: small-caps;
     text-shadow: 2px 2px 4px #000000;
+    transition: 1s;
+    transform: 1s;
 }
 
-#TextContainerTop{
+#TextContainerTop {
     margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.BottomText{
+.BottomText {
     /*color: rgb(108, 221, 255);*/
     color: rgb(103, 161, 255);
-    
+
 }
 
-.SummaryTextBottom{
+.SummaryTextBottom {
     position: relative;
     color: rgb(255, 255, 255, 0.7);
     font-size: 15px;
@@ -153,23 +194,23 @@ a{
     cursor: default;
 }
 
-#TextContainerBottom{
+#TextContainerBottom {
     margin-top: -3%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-#ButtonContainer{
+#ButtonContainer {
     margin-top: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#MainButton{
+#MainButton {
     background-color: transparent;
     font-family: Calibri;
     color: white;
@@ -183,20 +224,20 @@ a{
 }
 
 
-#MainButton:hover{
+#MainButton:hover {
     border: 1px solid rgb(103, 161, 255);
     color: rgb(103, 161, 255);
     transform: scale(1.05);
 
 }
 
-#Copyrights{
+#Copyrights {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#CopywrightWriting{
+#CopywrightWriting {
     font-family: Calibri;
     font-size: 10px;
     color: rgb(255, 255, 255, 0.7);
@@ -204,20 +245,20 @@ a{
 }
 
 
-#PortImage{
+#PortImage {
 
     position: relative;
 
 }
 
-#TopSocials{
+#TopSocials {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 12%;
 }
 
-.TopSocialIcons{
+.TopSocialIcons {
     margin-left: 5px;
     margin-right: 5px;
     transform: scale(0.5);
@@ -225,60 +266,60 @@ a{
     transition: .2s;
 }
 
-#TopSocialsMobile{
+#TopSocialsMobile {
     display: none;
 }
 
 
 
-#InstaTop:hover{
+#InstaTop:hover {
     transform: scale(.6);
-    
+
 }
 
-#FaceTop:hover{
-    transform: scale(.6);
-}
-
-#TwitterTop:hover{
+#FaceTop:hover {
     transform: scale(.6);
 }
 
-
-#LinkTop:hover{
+#TwitterTop:hover {
     transform: scale(.6);
 }
 
 
+#LinkTop:hover {
+    transform: scale(.6);
+}
 
-#Headshot{
+
+
+#Headshot {
     transform: scale(0.25);
-    
+
 }
 
 
-#MainTextContainer{
-    
+#MainTextContainer {
+
     /*background-color: rgba(26, 34, 47);*/
     margin-top: 5%;
     backdrop-filter: blur(0px);
     /*box-shadow: 0 5px 9px rgba(255, 255, 255, 0.1);*/
     height: 100%;
-    
-    
+
+
 }
 
 
 
-#NavigationBar:hover{
-    
+#NavigationBar:hover {
+
     transition: .3s;
-   
+
 }
 
-  
 
-#Instagram{
+
+#Instagram {
 
     position: absolute;
     top: 90px;
@@ -288,7 +329,7 @@ a{
 
 }
 
-#Facebook{
+#Facebook {
 
     position: absolute;
     top: 140px;
@@ -298,7 +339,7 @@ a{
 }
 
 
-#Twitter{
+#Twitter {
 
     position: absolute;
     top: 190px;
@@ -308,7 +349,7 @@ a{
 
 }
 
-#BottomContainer{
+#BottomContainer {
     height: 100%;
     margin-top: -10%;
     background-color: rgb(10, 14, 20);
@@ -316,7 +357,7 @@ a{
     width: 100%;
 }
 
-#QuickHead{
+#QuickHead {
     color: white;
     margin-left: -30px;
     list-style-type: none;
@@ -324,13 +365,13 @@ a{
     font-variant: small-caps;
 }
 
-#QuickLinks{
-    
+#QuickLinks {
+
     margin-left: 40%;
     position: absolute;
 }
 
-#NameHead{
+#NameHead {
 
     color: white;
     list-style-type: none;
@@ -339,7 +380,7 @@ a{
 }
 
 
-li{
+li {
     color: rgb(145, 145, 145);
     font-size: 15px;
     font-family: calibri;
@@ -348,41 +389,41 @@ li{
     cursor: default;
 }
 
-#NameContact{
+#NameContact {
     list-style-type: none;
     margin-left: 20px;
     position: absolute;
 }
 
-.BotomList{
-    
+.BotomList {
+
     margin-right: 10%;
 }
 
-.BottomListItem{
+.BottomListItem {
     margin-bottom: 30px;
     font-size: 15px;
 }
 
 
-#ContactMe{
+#ContactMe {
     list-style-type: none;
     position: absolute;
 
 }
 
-#ContactHead{
+#ContactHead {
     color: white;
     list-style-type: none;
     font-variant: small-caps;
 }
 
-.BottomHeading{
+.BottomHeading {
     font-size: 30px;
 }
 
-#ContactMe{
-    
+#ContactMe {
+
     margin-left: 70%;
 }
 
@@ -390,7 +431,7 @@ li{
 
 
 
-#InstagramBottom{
+#InstagramBottom {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -398,7 +439,7 @@ li{
     transform: scale(.8);
 }
 
-#FacebookBottom{
+#FacebookBottom {
     position: absolute;
     margin-left: 140px;
     width: 24px;
@@ -407,7 +448,7 @@ li{
 }
 
 
-#TwitterBottom{
+#TwitterBottom {
     position: absolute;
     margin-left: 220px;
     width: 24px;
@@ -416,45 +457,45 @@ li{
 
 }
 
-.BottomSocialIcons{
+.BottomSocialIcons {
     margin-top: 330px;
 }
 
 
-#PhoneBottom{
+#PhoneBottom {
 
     position: absolute;
-    margin-top: -86px;
+    margin-top: -115px;
 
 }
 
-#GmailBottom{
+#GmailBottom {
 
     position: absolute;
-    margin-top: -26px;
+    margin-top: -55px;
 
 }
 
-#MenuButtonContainer{
+#MenuButtonContainer {
     display: none;
     justify-content: right;
     z-index: 999;
-   
+
 }
 
-#Menu{
+#Menu {
     transform: scale(.6);
     cursor: pointer;
     position: fixed;
     top: 25px;
     right: 55px;
     z-index: 999;
-   
+
 }
 
 
 
-#MenuButton_Menu{
+#MenuButton_Menu {
     z-index: 9999;
     position: fixed;
     background-color: rgba(32, 43, 63);
@@ -465,7 +506,7 @@ li{
 }
 
 
-.Style{
+.Style {
     font-size: 12px;
     font-family: Calibri;
     color: white;
@@ -474,31 +515,34 @@ li{
     cursor: pointer;
 }
 
-.MenuListItem{
+.MenuListItem {
     list-style: none;
     font-size: 16px;
 }
 
-#MenuButtonMenuContainer{
+#MenuButtonMenuContainer {
     display: none;
     animation: fadeIn 0.2s ease-in-out;
-    
+
 }
 
 
 
 @keyframes fadeIn {
     from {
-      
-      transform: translatex(200px); /* Initial position if needed */
-    }
-    to {
-      
-      transform: translatex(0); /* Final position */
-    }
-  }
 
-#CloseMenuImg{
+        transform: translatex(200px);
+        /* Initial position if needed */
+    }
+
+    to {
+
+        transform: translatex(0);
+        /* Final position */
+    }
+}
+
+#CloseMenuImg {
     cursor: pointer;
     transform: scale(.5);
     margin-top: -10px;
@@ -506,52 +550,61 @@ li{
 }
 
 @media screen and (max-width: 985px) {
-    .BottomHeading{
+    .BottomHeading {
         font-size: 20px;
     }
-    
-    .BottomListItem{
+
+    .BottomListItem {
         margin-bottom: 30px;
         font-size: 10px;
     }
-    
-    #QuickLinks{
+
+    #QuickLinks {
         margin-left: 45%;
         position: absolute;
     }
-    
-    .ImageResize{
+
+    .ImageResize {
         transform: scale(.7);
     }
-    
-    #PhoneBottom{
+
+    #PhoneBottom {
 
         position: absolute;
         margin-top: -100px;
-    
-    }
-    
-    #GmailBottom{
-    
-        position: absolute;
-        margin-top: -50px;
-    
+
     }
 
-    .BottomSocialIcons{
+    #GmailBottom {
+
+        position: absolute;
+        margin-top: -50px;
+
+    }
+
+    .BottomSocialIcons {
         margin-top: 250px;
+    }
+
+    #Menu {
+        transform: scale(.5);
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 35px;
+        z-index: 999;
     }
 }
 
 
 
 @media screen and (max-width: 690px) {
-    
+
     meta[name="viewport"] {
         content: width=device-width, initial-scale=0.8;
     }
 
-    .MainTextTop{
+    .MainTextTop {
         position: relative;
         cursor: default;
         color: white;
@@ -564,38 +617,39 @@ li{
         text-shadow: 2px 2px 4px #000000;
     }
 
-    #TextContainerTop{
+    #TextContainerTop {
         margin-top: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    #TextContainerBottom{
+    #TextContainerBottom {
         margin-top: -3%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 
-    .SummaryTextBottom{
+    .SummaryTextBottom {
         position: relative;
         color: rgb(255, 255, 255, 0.7);
-        font-size: 12px;
+        font-size: 15px;
         font-family: calibri;
         letter-spacing: 1px;
         line-height: 1.6;
         cursor: default;
+        text-align: center;
     }
 
-    .Button{
+    .Button {
         display: none;
     }
 
-    .Name{
+    .Name {
         /*color: rgb(103, 161, 255);*/
         color: white;
         padding-top: 0%;
@@ -612,20 +666,20 @@ li{
         font-variant: small-caps;
     }
 
-    #MenuButtonContainer{
+    #MenuButtonContainer {
         display: flex;
         justify-content: right;
         z-index: 999;
     }
 
-    #ButtonContainer{
+    #ButtonContainer {
         margin-top: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
-    #MainButton{
+
+    #MainButton {
         background-color: transparent;
         font-family: Calibri;
         color: white;
@@ -639,7 +693,7 @@ li{
         font-size: 11px;
     }
 
-    #BottomContainer{
+    #BottomContainer {
         height: 100%;
         margin-top: -50%;
         background-color: rgb(10, 14, 20);
@@ -647,49 +701,59 @@ li{
         width: 100%;
     }
 
-    .BottomHeading{
+    .BottomHeading {
         font-size: 15px;
     }
-    
-    .BottomListItem{
+
+    .BottomListItem {
         margin-bottom: 30px;
         font-size: 8px;
     }
-    
-    #QuickLinks{
+
+    #QuickLinks {
         margin-left: 48%;
         position: absolute;
     }
-    
-    .ImageResize{
+
+    .ImageResize {
         transform: scale(.6);
     }
-    
-    #PhoneBottom{
+
+    #PhoneBottom {
 
         position: absolute;
         margin-top: -95px;
-    
-    }
-    
-    #GmailBottom{
-    
-        position: absolute;
-        margin-top: -50px;
-    
+
     }
 
-    #NameContact{
+    #GmailBottom {
+
+        position: absolute;
+        margin-top: -50px;
+
+    }
+
+    #NameContact {
 
         margin-left: 0px;
         position: absolute;
     }
 
-    .BottomSocialIcons{
+    .BottomSocialIcons {
         display: none;
     }
-    #ContactMe{
+
+    #ContactMe {
         margin-right: 15px;
+    }
+
+    #Menu {
+        transform: scale(.5);
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 35px;
+        z-index: 999;
     }
 }
 
@@ -697,21 +761,22 @@ li{
 
 
 @media screen and (max-width: 492px) {
-    
+
     meta[name="viewport"] {
         content: width=device-width, initial-scale=0.8;
     }
 
-    #ContactMe{
+    #ContactMe {
         margin-right: 15px;
         display: none;
     }
-    .MainTextTop{
+
+    .MainTextTop {
         position: relative;
         cursor: default;
         color: white;
         font-family: calibri;
-        font-size: 25px;
+        font-size: 30px;
         align-content: center;
         letter-spacing: 1px;
         line-height: 1.2;
@@ -719,38 +784,40 @@ li{
         text-shadow: 2px 2px 4px #000000;
     }
 
-    #TextContainerTop{
+    #TextContainerTop {
         margin-top: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    #TextContainerBottom{
+    #TextContainerBottom {
         margin-top: -3%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 
-    .SummaryTextBottom{
+    .SummaryTextBottom {
         position: relative;
         color: rgb(255, 255, 255, 0.7);
-        font-size: 9px;
+        font-size: 15px;
         font-family: calibri;
         letter-spacing: 1px;
         line-height: 1.6;
         cursor: default;
+        text-align: center;
+
     }
 
-    .Button{
+    .Button {
         display: none;
     }
 
-    .Name{
+    .Name {
         /*color: rgb(103, 161, 255);*/
         color: white;
         padding-top: 0%;
@@ -767,29 +834,29 @@ li{
         font-variant: small-caps;
     }
 
-    #MenuButtonContainer{
+    #MenuButtonContainer {
         display: flex;
         justify-content: right;
         z-index: 999;
     }
 
-    #Menu{
+    #Menu {
         transform: scale(.5);
         cursor: pointer;
         position: fixed;
-        top: 25px;
+        top: 15px;
         right: 35px;
         z-index: 999;
     }
 
-    #ButtonContainer{
+    #ButtonContainer {
         margin-top: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
-    #MainButton{
+
+    #MainButton {
         background-color: transparent;
         font-family: Calibri;
         color: white;
@@ -803,64 +870,64 @@ li{
         font-size: 10px;
     }
 
-    #BottomContainer{
+    #BottomContainer {
         height: 100%;
         margin-top: -70%;
         background-color: rgb(10, 14, 20);
         padding-bottom: -100px;
         width: 100%;
     }
-    
-    #NameContact{
+
+    #NameContact {
 
         margin-left: -20px;
         position: absolute;
     }
 
-    .BottomSocialIcons{
+    .BottomSocialIcons {
         display: none;
     }
 
-    .BottomHeading{
+    .BottomHeading {
         font-size: 17px;
     }
-    
-    .BottomListItem{
+
+    .BottomListItem {
         margin-bottom: 30px;
         font-size: 12px;
     }
-    
-    #QuickLinks{
+
+    #QuickLinks {
         margin-left: 65%;
         position: absolute;
     }
-    
-    .ImageResize{
+
+    .ImageResize {
         transform: scale(.6);
     }
-    
-    #PhoneBottom{
+
+    #PhoneBottom {
 
         position: absolute;
         margin-top: -105px;
         margin-left: -2px;
     }
-    
-    #GmailBottom{
-    
+
+    #GmailBottom {
+
         position: absolute;
         margin-top: -52px;
         margin-left: -2px;
-    
+
     }
 
-    #NameContact{
+    #NameContact {
 
         margin-left: -20px;
         position: absolute;
     }
-    
-    #BottomWriteup{
+
+    #BottomWriteup {
         display: none;
     }
 }
@@ -868,61 +935,63 @@ li{
 
 
 @media screen and (max-width: 450px) {
-    
+
     meta[name="viewport"] {
         content: width=device-width, initial-scale=0.8;
     }
 
-    #ContactMe{
+    #ContactMe {
         margin-right: 15px;
     }
-    .MainTextTop{
+
+    .MainTextTop {
         position: relative;
         cursor: default;
         color: white;
         font-family: calibri;
-        font-size: 23px;
+        font-size: 30px;
         align-content: center;
         letter-spacing: 1px;
         line-height: 1.2;
         font-variant: small-caps;
         text-shadow: 2px 2px 4px #000000;
-        
+
     }
 
-    #TextContainerTop{
+    #TextContainerTop {
         margin-top: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    #TextContainerBottom{
+    #TextContainerBottom {
         margin-top: -3%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        text-align: center;
+
     }
 
-    .SummaryTextBottom{
+    .SummaryTextBottom {
         position: relative;
         color: rgb(255, 255, 255, 0.7);
-        font-size: 9px;
+        font-size: 15px;
         font-family: calibri;
         letter-spacing: 1px;
         line-height: 1.6;
         cursor: default;
-        
+
     }
 
-    .Button{
+    .Button {
         display: none;
     }
 
-    .Name{
+    .Name {
         /*color: rgb(103, 161, 255);*/
         color: white;
         padding-top: 0%;
@@ -940,30 +1009,22 @@ li{
         margin-top: 20px;
     }
 
-    #MenuButtonContainer{
+    #MenuButtonContainer {
         display: flex;
         justify-content: right;
         z-index: 999;
     }
 
-    #Menu{
-        transform: scale(.6);
-        cursor: pointer;
-        position: fixed;
-        top: 15px;
-        right: 35px;
-        z-index: 999;
-    }
 
-    #ButtonContainer{
+    #ButtonContainer {
         margin-top: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
-       
+
     }
-    
-    #MainButton{
+
+    #MainButton {
         background-color: transparent;
         font-family: Calibri;
         color: white;
@@ -977,8 +1038,8 @@ li{
         font-size: 10px;
     }
 
-    #BottomContainer{
-       
+    #BottomContainer {
+
         height: 50%;
         margin-top: -70%;
         background-color: rgb(10, 14, 20);
@@ -986,106 +1047,103 @@ li{
         width: 100%;
         padding-right: 32px;
     }
-    
-    #NameContact{
+
+    #NameContact {
         margin-left: -20px;
         position: absolute;
     }
 
-    .BottomSocialIcons{
+    .BottomSocialIcons {
         display: none;
     }
 
-    .BottomHeading{
+    .BottomHeading {
         font-size: 17px;
     }
-    
-    .BottomListItem{
+
+    .BottomListItem {
         margin-bottom: 30px;
         font-size: 12px;
     }
-    
-    #QuickLinks{
+
+    #QuickLinks {
         margin-left: 60%;
         position: absolute;
     }
-    
-    .ImageResize{
+
+    .ImageResize {
         transform: scale(.6);
     }
-    
-    #PhoneBottom{
+
+    #PhoneBottom {
 
         position: absolute;
         margin-top: -107px;
         margin-left: -2px;
     }
-    
-    #GmailBottom{
-    
+
+    #GmailBottom {
+
         position: absolute;
         margin-top: -53px;
         margin-left: -2px;
-    
+
     }
 
-    #NameContact{
+    #NameContact {
 
         margin-left: -20px;
         position: absolute;
     }
-    
-    #BottomWriteup{
+
+    #BottomWriteup {
         display: none;
     }
 
-    #TopSocials{
-        display: none;
-    }
-    
-   
-    .TopSocialIcons{
+    #TopSocials {
         display: none;
     }
 
-    #TopSocialsMobile{
+
+    .TopSocialIcons {
+        display: none;
+    }
+
+    #TopSocialsMobile {
         display: flex;
         flex-direction: column;
         justify-content: left;
         position: fixed;
-        top: 150px;
+        top: 250px;
         left: -5px;
         z-index: 9999;
-        background: rgb(21, 28, 41); 
+        background: rgb(21, 28, 41);
         border-radius: 5px;
     }
-    
-    .TopSocialIconsMobile{
+
+    .TopSocialIconsMobile {
         transform: scale(.7);
         display: default;
         padding: 7px;
     }
 
-    #Copyrights{
+    #Copyrights {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
-    
-    #CopywrightWriting{
+
+    #CopywrightWriting {
         font-family: Calibri;
         font-size: 10px;
         color: rgb(255, 255, 255, 0.7);
         cursor: default;
     }
 
-    #ContactMe{
+    #ContactMe {
         right: -25px;
         display: none;
     }
 
 }
-
-
-

@@ -2,145 +2,171 @@
 
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Resume.css" type="text/css" rel="stylesheet">
     <script src="Resume.js" defer></script>
-    <title>Resume</title>
+    <title>Resume - Lukas Leins</title>
 </head>
 
 <body>
 
-<div id="NavigationBar">
+    <div id="NavigationBar" class="Load_Item">
 
-    <p class="Name">Lukas&nbsp;  <span id="TopText">  Leins</span></p>
+        <p class="Name">Lukas&nbsp; <span id="TopText"> Leins</span></p>
 
-    <button onclick="location.href='HomePage.html'" class="Button Home">Home</button>
-    <button onclick="location.href='Resume.html'"class="Button Resume">Resume</button>
-    <button onclick="location.href='Projects.html'" class="Button Projects">Projects</button>
-    <button onclick="location.href='Contact.html'" class="Button About">Contact</button>
-</div>
-
-
-<div id="description">
-    <p class="WriteUp">Below you will find my <span id="ResumeTextTop">Resume</span></p>
-    <p class="BottomWriteUp">It is up-to-date as of 2023. If you have any questions feel free to contact me</p>
-</div>
-
-<div id="ButtonContainer">
-   <button onclick="downloadResume()" id="MainButton">DOWNLOAD RESUME</button> 
-</div>
-
-
-
-
-<div id="ScrollImg">
-   
-    <a href="#Heading2"><img src="Images/arrow.png"></a>
-</div>
-
-
-
-
-<div id="Nav2">
-    <button onclick="location.href='#Contact'" class="Button Qual">Qualifications</button>
-    <button onclick="location.href='#Work'" class="Button Work">Work</button>
-    <button onclick="location.href='#MarkerVolunteer'" class="Button Volun">Volunteer</button>
-    <button onclick="location.href='#MarkerEducation'" class="Button Educ">Education</button>
-
-
-</div>
-
-
-<div class="container">
-    <div id="Heading2">
-        <h1>Lukas Leins</h1>
-        <p id="Contact">6910 Kalyna Dr. Agassiz, V0M 1A3 | lleins237@gmail.com | 604-701-7527 | <a id="ResumeDownload" href="Downloads/Lukas Leins Resume 2023.pdf" download target="_blank"> Download PDF</a></p>
-    </div> 
-    <div id="Summary">
-        <h1 id="QualMarker">Marker</h1>
-        <h1 id="SumHead">Summary of Qualifications</h1>
-        <ul>
-            <li>Able and willing to assist co-workers, supervisors, and customers in a cooperative manner</li>
-            <li>Great time management and efficient work ethic</li>
-            <li>Profound interpersonal and communication skills</li>
-            <li>Well organized and focused in a fast-paced work environment</li>
-            <li>Great written and verbal communication skills</li>
-        </ul>
+        <button onclick="location.href='HomePage.html'" id="Home_Button" class="Button Home">Home</button>
+        <button onclick="location.href='Resume.html'" id="Resume_Button" class="Button Resume">Resume</button>
+        <button onclick="location.href='Projects.html'" id="Projects_Button" class="Button Projects">Projects</button>
+        <button onclick="location.href='Contact.html'" id="Contact_Button" class="Button About">Contact</button>
     </div>
-    <div id="Work">
-        <h1 id="WorkMark">Marker</h1>
-        <h1 id="WorkHead">Work Experience</h1>
-        <h2 id="PeerDate">January - April 2021</h2>
-        <h2 id="Peer">Career Peer</h2>
-        <h3 id="PeerInfo">Centre for Experiential and Career Education (CECE), University of the Fraser Valley, Chilliwack, BC</h3>
-        <ul id="PeerList">
-            <li>Providing help with resume and cover letter writing for fellow students</li>
-            <li>Coaching students individually with job search and how to tailor their strategies</li>
-            <li>Attending informational interviews with employers to gain insight in particular fields</li>
-            <li> Writing up official summaries of appointment outcomes and dealings</li>
 
-        </ul>
-        <h2 id="AnimalDate">Summers of 2018 and 2019</h2>
-        <h2 id="Animal">Historic Animal Interpreter</h2>
-        <h3 id="AnimalInfo"> Kilby Historic Site, Kilby, BC</h3>
-        <ul id="AnimalList">
-            <li>Maintained overall health of all domestic farm animals on site</li>
-            <li>Communicated with visitors about the site's history and relevant information</li>
-            <li>Trained employees on how to take care of the animals, how to communicate with the visitors and the historical information of the site</li>
-            <li>Led groups for detailed tours and provided information about the history of the site</li>
 
-        </ul>
-        <h2 id="MaintDate">Summers of 2021</h2>
-        <h2 id="Maint">Maintenance Worker</h2>
-        <h3 id="MaintInfo"> Kilby Historic Site, Kilby, BC</h3>
-        <ul id="MaintList">
-            <li>Repaired and maintained various structures and site facilities</li>
-            <li>Maintained overall health of all domestic farm animals on site</li>
-            <li>Assisted with coordination of campground sites and visitors</li>
-            <li>Communicated and conversed with visitors and customers on questions, concerns, and inquires</li>
+    <div id="MenuButtonContainer">
+        <img id="Menu" src="Images/SmallMenuImg.png" alt="Menu Image" ontouchstart="MenuButton()"
+            onclick="MenuButton()">
+    </div>
 
-        </ul>
+    <div id="MenuButtonMenuContainer">
+        <div id="MenuButton_Menu">
+            <ul id="Mobile_Menu_ul">
+                <li class="MenuListItem"><img id="CloseMenuImg" src="Images/CloseImg.png" alt="Close"
+                        ontouchstart="CloseMenuButton()" onclick="CloseMenuButton()"></li>
+                <li class="MenuListItem Style" id="MenuHome" onclick="location.href='HomePage.html'">Home</li>
+                <li class="MenuListItem Style" id="MenuResume" onclick="location.href='Resume.html'">Resume</li>
+                <li class="MenuListItem Style" id="MenuProjects" onclick="location.href='Projects.html'">Projects</li>
+                <li class="MenuListItem Style" id="MenuContact" onclick="location.href='Contact.html'">Contact</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="description">
+        <p class="WriteUp Load_Item">Below you will find my <span id="ResumeTextTop">Resume</span></p>
+        <p class="BottomWriteUp Load_Item">It is up-to-date as of 2023. If you have any questions feel free to
+            contact me</p>
+    </div>
+
+    <div id="ButtonContainer" class="Load_Item">
+        <button onclick="downloadResume()" id="MainButton">DOWNLOAD RESUME</button>
+    </div>
+
+
+
+
+    <div id="ScrollImg" class="Load_Item">
+
+        <a href="#Heading2"><img src="Images/arrow.png"></a>
+    </div>
+
+
+
+
+    <div id="Nav2">
+        <button onclick="location.href='#Contact'" class="Button Qual">Qual</button>
+        <button onclick="location.href='#Work'" class="Button Work">Work</button>
+        <button onclick="location.href='#MarkerVolunteer'" class="Button Volun">Volun</button>
+        <button onclick="location.href='#MarkerEducation'" class="Button Educ">Edu</button>
+
 
     </div>
 
-    <div id="Volunteer">
-        <h1 id="MarkerVolunteer">Marker</h1>
-        <h1 id="VolunteerExp">Volunteer Experience</h1>
-        <h2 id="FarmDate">October - November 2019</h2>
-        <h2 id="Farm">Farm Hand</h2>
-        <h3 id="FarmInfo"> Kilby Historic Site, Kilby, BC</h3>
-        <ul id="FarmList">
-            <li>Assisted with general site repairs and maintenance</li>
-            <li>Maintained overall health of all domestic farm animals on site</li>
-            <li>Assisted with campground maintenance</li>
-            <li>Assisted with the rearrangement of historical artifacts</li>
 
-        </ul>
-        <h2 id="CookDate">June 2019</h2>
-        <h2 id="Cook">Cook/Cashier</h2>
-        <h3 id="CookInfo"> Agassiz Speedway Concession, Agassiz, BC</h3>
-        <ul id="CookList">
-            <li>Assisted in the preparation of food for the public</li>
-            <li>Cleaned and sanitized all work areas before and at the end of the shifts</li>
-            <li>Provided respectful and professional customer service</li>
-            <li>Resolved customers' complaints in a respectful and calm manner</li>
+    <div class="container">
+        <div id="Heading2">
+            <h1>Lukas Leins</h1>
+            <p id="Contact">6910 Kalyna Dr. Agassiz, V0M 1A3 | lleins237@gmail.com | 604-701-7527 | <a
+                    id="ResumeDownload" href="Downloads/Lukas Leins Resume 2023.pdf" download target="_blank"> Download
+                    PDF</a></p>
+        </div>
+        <div id="Summary">
+            <h1 id="QualMarker">Marker</h1>
+            <h1 id="SumHead">Summary of Qualifications</h1>
+            <ul>
+                <li>Able and willing to assist co-workers, supervisors, and customers in a cooperative manner</li>
+                <li>Great time management and efficient work ethic</li>
+                <li>Profound interpersonal and communication skills</li>
+                <li>Well organized and focused in a fast-paced work environment</li>
+                <li>Great written and verbal communication skills</li>
+            </ul>
+        </div>
+        <div id="Work">
+            <h1 id="WorkMark">Marker</h1>
+            <h1 id="WorkHead">Work Experience</h1>
+            <h2 id="PeerDate">January - April 2021</h2>
+            <h2 id="Peer">Career Peer</h2>
+            <h3 id="PeerInfo">Centre for Experiential and Career Education (CECE), University of the Fraser Valley,
+                Chilliwack, BC</h3>
+            <ul id="PeerList">
+                <li>Providing help with resume and cover letter writing for fellow students</li>
+                <li>Coaching students individually with job search and how to tailor their strategies</li>
+                <li>Attending informational interviews with employers to gain insight in particular fields</li>
+                <li> Writing up official summaries of appointment outcomes and dealings</li>
 
-        </ul>
+            </ul>
+            <h2 id="AnimalDate">Summers of 2018 and 2019</h2>
+            <h2 id="Animal">Historic Animal Interpreter</h2>
+            <h3 id="AnimalInfo"> Kilby Historic Site, Kilby, BC</h3>
+            <ul id="AnimalList">
+                <li>Maintained overall health of all domestic farm animals on site</li>
+                <li>Communicated with visitors about the site's history and relevant information</li>
+                <li>Trained employees on how to take care of the animals, how to communicate with the visitors and the
+                    historical information of the site</li>
+                <li>Led groups for detailed tours and provided information about the history of the site</li>
+
+            </ul>
+            <h2 id="MaintDate">Summer of 2021</h2>
+            <h2 id="Maint">Maintenance Worker</h2>
+            <h3 id="MaintInfo"> Kilby Historic Site, Kilby, BC</h3>
+            <ul id="MaintList">
+                <li>Repaired and maintained various structures and site facilities</li>
+                <li>Maintained overall health of all domestic farm animals on site</li>
+                <li>Assisted with coordination of campground sites and visitors</li>
+                <li>Communicated and conversed with visitors and customers on questions, concerns, and inquires</li>
+
+            </ul>
+
+        </div>
+
+        <div id="Volunteer">
+            <h1 id="MarkerVolunteer">Marker</h1>
+            <h1 id="VolunteerExp">Volunteer Experience</h1>
+            <h2 id="FarmDate">October - November 2019</h2>
+            <h2 id="Farm">Farm Hand</h2>
+            <h3 id="FarmInfo"> Kilby Historic Site, Kilby, BC</h3>
+            <ul id="FarmList">
+                <li>Assisted with general site repairs and maintenance</li>
+                <li>Maintained overall health of all domestic farm animals on site</li>
+                <li>Assisted with campground maintenance</li>
+                <li>Assisted with the rearrangement of historical artifacts</li>
+
+            </ul>
+            <h2 id="CookDate">June 2019</h2>
+            <h2 id="Cook">Cook/Cashier</h2>
+            <h3 id="CookInfo"> Agassiz Speedway Concession, Agassiz, BC</h3>
+            <ul id="CookList">
+                <li>Assisted in the preparation of food for the public</li>
+                <li>Cleaned and sanitized all work areas before and at the end of the shifts</li>
+                <li>Provided respectful and professional customer service</li>
+                <li>Resolved customers' complaints in a respectful and calm manner</li>
+
+            </ul>
+        </div>
+
+        <div id="Education">
+            <h1 id="MarkerEducation">Marker</h1>
+            <h1 id="EducHead">Education</h1>
+            <h2 id="BachDate">In Progress</h2>
+            <h2 id="Bach">Bachelor of Computer Science Degree</h2>
+            <h3 id="Bachinfo">University of British Columbia (UBC), Vancouver, BC </h3>
+
+            <P id="Ref">References Available Upon Request</P>
+
+        </div>
+
+
+
     </div>
-
-    <div id="Education">
-        <h1 id="MarkerEducation">Marker</h1>
-        <h1 id="EducHead">Education</h1>
-        <h2 id="BachDate">In Progress</h2>
-        <h2 id="Bach">Bachelor of Computer Science Degree</h2>
-        <h3 id="Bachinfo">University of British Columbia (UBC), Vancouver, BC </h3>
-
-        <P id="Ref">References Available Upon Request</P>
-
-    </div>
-
-    
-    
-</div>   
 
 
 
