@@ -40,7 +40,7 @@ window.addEventListener('scroll', function () {
 
 
 function downloadResume() {
-  var url = 'Lukas Leins Resume 2023 Updated (1).pdf'; // Replace with the actual URL of your resume file
+  var url = 'Lukas Leins Updated Resume 2023.pdf'; // Replace with the actual URL of your resume file
 
   window.open(url, '_blank');
 
@@ -62,10 +62,14 @@ function CloseMenuButton() {
 //For Mobile Menu button----------------------------------------------------
 
 
+//for github link--------------------------------------------------------------------------------------------
+function Open_GitHub() {
+  const Music_Url = "https://github.com/lleins"
 
+  window.open(Music_Url, '_blank')
+}
 
-
-
+//for github link--------------------------------------------------------------------------------------------
 const items = document.querySelectorAll('.Load_Item');
 
 function staggeredLoad() {

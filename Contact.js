@@ -1,5 +1,7 @@
 /*Background Image Change ----------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
 
+});
 function randomNumber(min, max) {
   let numb = Math.random() * (max - min) + min;
   return parseInt(numb);
@@ -105,7 +107,10 @@ function hideFail() {
 const TimetoHide = 6000;
 
 
-submitButton.addEventListener('click', function () {
+function Call_Flask() {
+  const Main_Button = document.getElementById("MainButton");
+  const Loader_Contact = document.getElementById("LoadingAnimation_Contact");
+
   const NameText = document.getElementById('NameTextBox').value;      //Name Text Box
   const ClearNameText = document.getElementById('NameTextBox');
 
@@ -115,33 +120,106 @@ submitButton.addEventListener('click', function () {
   const BodyText = document.getElementById('MessageTextBox').value;
   const ClearBodyText = document.getElementById('MessageTextBox');
 
+  Main_Button.style.color = "rgb(255, 255, 255, 0)";
+  Loader_Contact.style.display = "block";
+
   const Data = { Name: NameText, Email: EmailText, Body: BodyText };
 
+  console.log('NameText:', NameText);
+  console.log('NameText:', EmailText);
+  console.log('NameText:', BodyText);
 
-  fetch('http://127.0.0.1:5000/process_data', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(Data)
-  })
-    .then(response => response.json())
-    .then(data => {
-      const outputResult = document.getElementById('outputResult');
-      Success.style.display = 'flex';
-      SuccessImg.style.display = 'flex';
-      ClearNameText.value = '';
-      ClearEmailText.value = '';
-      ClearBodyText.value = '';
-      setTimeout(hideSuccess, TimetoHide);
+  if (NameText === "" && EmailText === "" && BodyText === "") { //All 3 empty
+    ClearNameText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    ClearEmailText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    ClearBodyText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    Main_Button.style.color = "rgb(255, 255, 255, 1)";
+    Loader_Contact.style.display = "none";
+    setTimeout(function () {
+      ClearNameText.style.backgroundColor = "rgb(32, 48, 70)";
+      ClearEmailText.style.backgroundColor = "rgb(32, 48, 70)";
+      ClearBodyText.style.backgroundColor = "rgb(32, 48, 70)";
+    }, 3000);
+  } else if (NameText === "" && EmailText === "" && BodyText !== "") { //Name, Email empty
+    ClearNameText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    ClearEmailText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    Main_Button.style.color = "rgb(255, 255, 255, 1)";
+    Loader_Contact.style.display = "none";
+    setTimeout(function () {
+      ClearNameText.style.backgroundColor = "rgb(32, 48, 70)";
+      ClearEmailText.style.backgroundColor = "rgb(32, 48, 70)";
+    }, 3000);
+  } else if (NameText === "" && EmailText !== "" && BodyText === "") { //Name, Body empty
+    ClearNameText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    ClearBodyText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    Main_Button.style.color = "rgb(255, 255, 255, 1)";
+    Loader_Contact.style.display = "none";
+    setTimeout(function () {
+      ClearNameText.style.backgroundColor = "rgb(32, 48, 70)";
+      ClearBodyText.style.backgroundColor = "rgb(32, 48, 70)";
+    }, 3000);
+  } else if (NameText !== "" && EmailText === "" && BodyText === "") { //Email, Body empty
+    ClearEmailText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    ClearBodyText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    Main_Button.style.color = "rgb(255, 255, 255, 1)";
+    Loader_Contact.style.display = "none";
+    setTimeout(function () {
+      ClearEmailText.style.backgroundColor = "rgb(32, 48, 70)";
+      ClearBodyText.style.backgroundColor = "rgb(32, 48, 70)";
+    }, 3000);
+  } else if (NameText !== "" && EmailText !== "" && BodyText === "") { //Body empty
+    ClearBodyText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    Main_Button.style.color = "rgb(255, 255, 255, 1)";
+    Loader_Contact.style.display = "none";
+    setTimeout(function () {
+      ClearBodyText.style.backgroundColor = "rgb(32, 48, 70)";
+    }, 3000);
+  } else if (NameText !== "" && EmailText === "" && BodyText !== "") { //Email empty
+    ClearEmailText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    Main_Button.style.color = "rgb(255, 255, 255, 1)";
+    Loader_Contact.style.display = "none";
+    setTimeout(function () {
+      ClearEmailText.style.backgroundColor = "rgb(32, 48, 70)";
+    }, 3000);
+  } else if (NameText === "" && EmailText !== "" && BodyText !== "") { //Name empty
+    ClearNameText.style.backgroundColor = "rgb(255, 50, 50, .8)";
+    Main_Button.style.color = "rgb(255, 255, 255, 1)";
+    Loader_Contact.style.display = "none";
+    setTimeout(function () {
+      ClearNameText.style.backgroundColor = "rgb(32, 48, 70)";
+    }, 3000);
+  } else if (NameText !== "" && EmailText !== "" && BodyText !== "") { //None empty
+    fetch('http://127.0.0.1:5000/process_data', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(Data)
     })
-    .catch(error => {
-      console.error('An error occurred:', error);
-      Fail.style.display = 'flex';
-      FailImg.style.display = 'flex';
-      setTimeout(hideFail, TimetoHide);
-    });
-});
+      .then(response => response.json())
+      .then(data => {
+        const outputResult = document.getElementById('outputResult');
+        Main_Button.style.color = "rgb(255, 255, 255, 1)";
+        Loader_Contact.style.display = "none";
+        Success.style.display = 'flex';
+        SuccessImg.style.display = 'flex';
+        ClearNameText.value = '';
+        ClearEmailText.value = '';
+        ClearBodyText.value = '';
+        setTimeout(hideSuccess, TimetoHide);
+      })
+      .catch(error => {
+        console.error('An error occurred:', error);
+        Main_Button.style.color = "rgb(255, 255, 255, 1)";
+        Loader_Contact.style.display = "none";
+        Fail.style.display = 'flex';
+        FailImg.style.display = 'flex';
+        setTimeout(hideFail, TimetoHide);
+      });
+  }
+}
+
+
 
 /*Flask Python Communication for Contact Form -----------------*/
 

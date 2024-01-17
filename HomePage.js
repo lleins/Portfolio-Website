@@ -109,3 +109,15 @@ function ChangeTitle() {
 ChangeTitle();
 
 //Function for Main Title----------------------------------------------------------
+
+
+
+function Open_GitHub() {
+  const githubUrl = "https://github.com/lleins";
+  window.open(githubUrl, '_blank');
+}
+
+function openLinkedIn() {
+  const linkedinUrl = "https://www.linkedin.com/in/lukas-leins-802474208";
+  window.open(linkedinUrl, '_blank');
+}

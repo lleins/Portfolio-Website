@@ -122,6 +122,51 @@ a {
 
 /*Project Container*/
 
+#Raven_Button {
+    cursor: not-allowed;
+}
+
+#Raven_Button:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1);
+}
+
+#Comic_Finds_Button {
+    cursor: not-allowed;
+}
+
+#Comic_Finds_Button:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1);
+}
+
+
+
+#Music_WebSearch_Button {
+    cursor: not-allowed;
+}
+
+#Music_WebSearch_Button:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1);
+}
+
+
+
+#Online_Notes_Button {
+    cursor: not-allowed;
+}
+
+#Online_Notes_Button:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1);
+}
+
+
 #Project_Titles {
     position: flex;
     margin-top: 150px;
@@ -157,11 +202,17 @@ a {
     border-radius: 5px;
 }
 
+#Socket_Img {
+    width: 44px;
+    height: 36px;
+    margin-left: -2px;
+}
+
 #Project_Container {
     position: absolute;
     top: 350px;
     width: 100%;
-    height: 5500px;
+    height: 6500px;
     background-color: rgba(12, 15, 22, .9);
     grid-template-columns: repeat(1, 1fr);
     /* Define the number of columns */
@@ -258,6 +309,20 @@ a {
 
 #Pixel_JS {
     transform: scale(1.3);
+}
+
+
+
+#Raven_Container {
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    height: 300px;
+    top: -40px;
+    margin-left: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
 }
 
 
@@ -521,6 +586,18 @@ a {
 
     }
 
+    #Raven_Container {
+        position: relative;
+        overflow: hidden;
+        width: 320px;
+        height: 150px;
+        top: 10px;
+        margin-left: 40px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+    }
+
     #Comic_Finds_Container {
         position: relative;
         overflow: hidden;
@@ -617,15 +694,26 @@ a {
         font-size: 12px;
     }
 
+    #Raven_Button {
+        margin-top: 95px;
+        margin-left: -160px;
+    }
+
+    #Raven_View {
+        margin-top: -35px;
+        margin-left: 15px;
+    }
+
+
 
     #Comic_Finds_Button {
         margin-top: 95px;
-        margin-left: -20px;
+        margin-left: -160px;
     }
 
     #Comic_View {
         margin-top: -35px;
-        margin-left: 30px;
+        margin-left: 15px;
     }
 
 

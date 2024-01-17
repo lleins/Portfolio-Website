@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="HomePage.css" type="text/css" rel="stylesheet">
     <script src="HomePage.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="Images/Header_ICO.ico">
     <title>Home - Lukas Leins</title>
 </head>
 
@@ -41,6 +42,9 @@
         </div>
     </div>
 
+    <div id="LoadingAnimation" class="loader">
+
+    </div>
 
     <div id="MainTextContainer">
 
@@ -81,9 +85,14 @@
         <div class="Load_Item">
             <div id="TopSocials">
                 <img class="TopSocialIcons" id="InstaTop" src="Images/InstaMain.png">
-                <img class="TopSocialIcons" id="FaceTop" src="Images/FaceMain.png">
-                <img class="TopSocialIcons" id="TwitterTop" src="Images/TwitterMain.png">
-                <img class="TopSocialIcons" id="LinkTop" src="Images/LinkMain.png">
+
+                <a href="https://www.linkedin.com/in/lukas-leins-802474208" target="_blank">
+                    <img class="TopSocialIcons" id="LinkTop" onclick="openLinkedIn()" target="_blank"
+                        src="Images/LinkMain.png">
+                </a>
+                <a href="https://github.com/lleins" target="_blank">
+                    <img class="TopSocialIcons" id="TwitterTop" src="Images/GitHubImg.png">
+                </a>
             </div>
 
             <div id="Copyrights">
@@ -98,9 +107,14 @@
 
     <div id="TopSocialsMobile">
         <img class="TopSocialIconsMobile" id="InstaTopMobile" src="Images/InstaMain.png">
-        <img class="TopSocialIconsMobile" id="FaceTopMobile" src="Images/FaceMain.png">
-        <img class="TopSocialIconsMobile" id="TwitterTopMobile" src="Images/TwitterMain.png">
-        <img class="TopSocialIconsMobile" id="LinkTopMobile" src="Images/LinkMain.png">
+
+        <a href="https://www.linkedin.com/in/lukas-leins-802474208" target="_blank">
+            <img class="TopSocialIconsMobile" id="LinkTopMobile" src="Images/LinkMain.png">
+        </a>
+
+        <a href="https://github.com/lleins" target="_blank">
+            <img class="TopSocialIconsMobile" id="FaceTopMobile" src="Images/GitHubImg.png">
+        </a>
     </div>
 
 
@@ -138,26 +152,23 @@
             <li class="BottomListItem">Phone: 604-701-7527</li>
             <li class="BottomListItem">Email: lleins237@gmail.com</li>
             <li class="BottomListItem">Alternate Email: llleins23@gmail.com</li>
-            <li class="BottomListItem">Mail: Kalyna Dr. 6910, Agassiz, V0M 1A3</li>
-
         </ul>
 
         <div id="BottomSocials">
             <div id="InstagramBottom" class="BottomSocialIcons">
-                <a href="https://www.instagram.com/nasawebb/?hl=en" target="_blank"> <img class="ImageResize"
-                        src="Images/InstaMain.png" alt="Instagram"> </a>
+                <a> <img class="ImageResize" src="Images/InstaMain.png" alt="Instagram"> </a>
             </div>
 
 
             <div id="FacebookBottom" class="BottomSocialIcons">
-                <a href="https://www.facebook.com/NASAWebb/?ref=page_internal" target="_blank"> <img class="ImageResize"
-                        src="Images/FaceMain.png" alt="Facebook"> </a>
+                <a href="https://www.linkedin.com/in/lukas-leins-802474208/" target="_blank"> <img class="ImageResize"
+                        src="Images/LinkMain.png" alt="Facebook"> </a>
             </div>
 
 
             <div id="TwitterBottom" class="BottomSocialIcons">
-                <a href="https://twitter.com/NASAWebb?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                    target="_blank"> <img class="ImageResize" src="Images/TwitterMain.png" alt="Twitter"> </a>
+                <a href="https://github.com/lleins" target="_blank"> <img class="ImageResize" src="Images/GitHubImg.png"
+                        alt="Twitter"> </a>
             </div>
 
 

@@ -506,6 +506,120 @@ h3 {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+#Drywaller {
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 200px;
+    cursor: default;
+}
+
+#DrywallerInfo {
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 190px;
+    cursor: default;
+
+}
+
+#DrywallerDate {
+    position: relative;
+    top: 250px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+}
+
+
+#DrywallerList {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 200px;
+    text-align: left;
+    cursor: default;
+}
+
+#DrywallerList:hover {
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+#Production {
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 200px;
+    cursor: default;
+}
+
+#ProductionInfo {
+    color: white;
+    position: relative;
+    text-align: left;
+    top: 190px;
+    cursor: default;
+
+}
+
+#ProductionDate {
+    position: relative;
+    top: 250px;
+    display: in-line;
+    text-align: right;
+    color: white;
+    cursor: default;
+}
+
+
+#ProductionList {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 200px;
+    text-align: left;
+    cursor: default;
+}
+
+#ProductionList:hover {
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Maint {
     color: white;
     position: relative;

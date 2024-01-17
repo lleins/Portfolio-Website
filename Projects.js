@@ -90,15 +90,22 @@ function resetImage(div) {
 
 //Go to Github---------------------
 
-function Pixel_Peak_GitOpen() {
-  const Comic_Url = "https://github.com/lleins/Pixel-Peak"
+function Raven_GitOpen() {
+  const Raven_Url = "https://github.com/lleins/Messaging-App"
 
-  window.open(Comic_Url, '_blank')
+  window.open(Raven_Url, '_blank')
+}
+
+
+function Pixel_Peak_GitOpen() {
+  const Pixel_Url = "https://github.com/lleins/Pixel-Peak"
+
+  window.open(Pixel_Url, '_blank')
 }
 
 
 function Comic_Finds_GitOpen() {
-  const Comic_Url = "https://github.com/lleins/Comic-Book-Repository"
+  const Comic_Url = "https://github.com/lleins/Comic-Finds"
 
   window.open(Comic_Url, '_blank')
 }

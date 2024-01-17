@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Contact.css" type="text/css" rel="stylesheet">
     <script src="Contact.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="Images/Header_ICO.ico">
     <title>Home - Lukas Leins</title>
 </head>
 
@@ -83,7 +84,9 @@
             </div>
 
             <div id="SendButton">
-                <button id="MainButton">SEND</button>
+                <button id="MainButton" onclick="Call_Flask()">
+                    <div id="LoadingAnimation_Contact" class="loader"></div>SEND
+                </button>
             </div>
 
             <div id="Confirmation">
@@ -98,7 +101,7 @@
             <div id="Location">
                 <img class="ContactImages" id="LocationImg" src="Images/ContactLocation.png">
                 <p class="ContactInfoTitle">Location</p>
-                <p class="ContactInfo">Kalyna Drive 6910<br>Agassiz V0M 1A3 BC Canada</p>
+                <p class="ContactInfo">Fraser Valley<br>BC Canada</p>
             </div>
 
             <div id="Phone">
