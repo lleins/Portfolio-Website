@@ -1,0 +1,327 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="Images/Logo_ico.ico">
+    <title>Home | Lukas Leins</title>
+</head>
+
+<body>
+    <div id="back_main_container">
+
+        <img id="Back_main" src="Images/newback_3.png">
+      
+        <video id="Video_Main" src="Videos/Back_2_slower.mp4" autoplay muted loop></video>
+    </div>
+
+
+
+    <!--
+    <div id="NavigationBar" class="Load_Item">
+        <p class="Name">Lukas&nbsp; <span id="TopText"> Leins</span></p>
+        <div id="nav_buttons">
+            <button onclick="location.href='Projects.html'" id="Projects_Button"
+                class="Button Projects">Projects</button>
+            <button onclick="location.href='Resume.html'" id="Resume_Button" class="Button Resume">Resume</button>
+            <button onclick="location.href='Contact.html'" id="Contact_Button" class="Button About">Contact</button>
+        </div>
+    </div>
+    -->
+
+    <!--
+    <div id="MenuButtonContainer">
+        <img id="Menu" src="Images/SmallMenuImg.png" alt="Menu Image" ontouchstart="MenuButton()"
+            onclick="MenuButton()">
+    </div>
+    -->
+
+    <div id="Side_nav">
+        <div class="Side_nav_item_container">
+            <img class="Side_nav_imgs" onclick="Open_GitHub()" src="Images/big_git.png">
+        </div>
+
+        <div class="Side_nav_item_container">
+            <img class="Side_nav_imgs" onclick="openLinkedIn()" src="Images/big_link.png">
+        </div>
+
+        <div class="Side_nav_item_container">
+            <img class="Side_nav_imgs" onclick="scrollintoview_contact()" src="Images/big_email.png">
+        </div>
+    </div>
+
+
+    <div>
+
+        <div id="top_nav">
+            <p id="top_name" onclick="scrollintoview_Home()">LUKAS LEINS</p>
+            <button class="bottom_nav_items" onclick="scrollintoview_projects()">PROJECTS</button>
+            <button class="bottom_nav_items" onclick="scrollintoview_contact()">CONTACT</button>
+            <button id="resume_top" class="bottom_nav_items" onclick="goToCV()">CV</button>
+        </div>
+    </div>
+
+    <div id="Main_home_tab">
+        <div id="Home_tab">
+            <div id="TextContainerTop" class="Load_Item">
+                <p id="Main_Heading_1" class="MainTextTop">Web<span class="BottomText"> Developer</span><br></p>
+            </div>
+
+            <div id="TextContainerBottom" class="Load_Item">
+                <p id="top_name_text" class="SummaryTextBottom">Lukas Leins</p>
+                <div id="left_line"></div>
+                <div id="right_line"></div>
+            </div>
+
+            <div id="top_socials_container" class="Load_Item">
+                <img class="top_links_style" onclick="Open_GitHub()" src="Images/big_git.png">
+                <img class="top_links_style" onclick="openLinkedIn()" src="Images/big_link.png">
+                <img class="top_links_style" onclick="scrollintoview_contact()" src="Images/big_email.png">
+                <img class="top_links_style" onclick="goToCV()" src="Images/big_cv.png">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Hi_tab">
+        <!--
+        <img id="Porfolio_Img" src="Images/PortfolioPic.jpg">
+        -->
+        <div id="container_text">
+          
+            <p id="hi_title">Hello there!</p>
+            <p id="hi_text">My name is Lukas Leins.</p>
+            <p id="hi_text_2">I love programming, as well as powerlifting, playing sports, and learning new things!</p>
+            <p id="hi_text_3">Feel free to get in touch or take a look at my past work below.</p>
+        </div>
+
+    </div>
+
+    <div id="links_tab">
+        <img class="links_style" onclick="Open_GitHub()" src="Images/big_git.png">
+        <img class="links_style" onclick="openLinkedIn()" src="Images/big_link.png">
+        <img class="links_style" onclick="scrollintoview_contact()" src="Images/big_email.png">
+        <img class="links_style" onclick="goToCV()" src="Images/big_cv.png">
+    </div>
+
+    <div id="Projects_tab">
+        <div id="Title_Projects">
+            <p class="Top_Project_text">My top projects<span class="BottomText"></span><br></p>
+        </div>
+
+        <div id="Projects_Main_Container">
+
+            <div id="projects_1_2_container">
+                <div id="project_1_container" class="project_container_style">
+                    <img id="Comic_Logo" src="Images/NewLogo.png">
+                    <p class="Title_projects_2">Comic Finds</p>
+                    <p class="stack">Javascript Python Flask NodeJS MongoDB</p>
+                    <p class="text_projects">Comic Finds is a comic book webscraper that allows users to search the
+                        entire internet for comic books in one convenient place.</p>
+                    <div class="bottom_project_links">
+                        <p class="visit_website" onclick="visit_ComicFinds()" id="Visit_Comic">VISIT WEBSITE</p>
+                        <p class="visit_website" onclick="Open_GitHub_Comic_finds()" id="Visit_git_comic">GITHUB</p>
+                    </div>
+
+                </div>
+                <!--
+                <div id="project_2_container" class="project_container_style">
+                    <img id="Pixel_Logo" src="Images/logo.png">
+                    <p class="Title_projects_2">Pixel Peak</p>
+                    <p class="text_projects"> Pixel Peak is a photo video browser made with the Pexels API call
+                        services. This was my first major project using the MERN stack, it took alot of work and
+                        effort!
+                    </p>
+                    <p class="visit_website" id="Visit_Pixel">VISIT WEBSITE</p>
+                    <p class="visit_website" onclick="Open_GitHub_Pixel_Peak()" id="Visit_git_pixel">GITHUB</p>
+                </div>
+                -->
+                <div id="Projects_3_container" class="project_container_style">
+                    <img id="Raven_Logo" src="Images/Logo_XLarge.png">
+                    <p class="Title_projects_2">Raven</p>
+                    <p class="stack">Javascript Socket.io NodeJS MongoDB</p>
+                    <p class="text_projects"> Raven is a messaging platform crafted for secure communication on
+                        the web. It serves as a project dedicated to exploring the Socket.IO library.</p>
+                    <div class="bottom_project_links_2">
+                        <p class="visit_website" id="Visit_number" onclick="visit_Raven()">VISIT WEBSITE</p>
+                        <p class="visit_website" onclick="Open_GitHub_Number()" id="Visit_git_number">GITHUB</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--
+        <div id="project_arrow_container">
+            <img id="left_arrow" class="arrow_imgs_projects" src="Images/LeftArrow2.png">
+            <img id="right_arrow" class="arrow_imgs_projects" src="Images/RightArrow2.png">
+        </div>
+
+
+        <div id="projects_container_carousel">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img class="Images_caro" src="Images/comic_3.png" alt="song">
+                    <div class="carousel_btn_container">
+                        <button class="Learn_More" onclick="learn_more('Learn_More_Comic_Finds')">Learn More</button>
+                        <button class="View_github" onclick="Open_GitHub_Comic_finds()">View on Github</button>
+                        <button class="View_live">Visit Site</button>
+                    </div>
+                    <div class="Learn_More_Information" id="Learn_More_Comic_Finds">
+                        <p class="Info_Title">Comic Finds</p>
+                        <p class="Info_Text">Comic Finds is a comic book webscraper made with HTML, CSS, JS, Node.js,
+                            Flask, and MongodDB. It scours through the internet to find the best and most relevant
+                            comics and comic art.
+                        </p>
+                        <img class="close_img" onclick="close_learn_more('Learn_More_Comic_Finds')"
+                            src="Images/CloseImg.png">
+                    </div>
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                    <img class="Images_caro" src="Images/PixelPeakFull.png" alt="song">
+                    <div class="carousel_btn_container">
+                        <button class="Learn_More" onclick="learn_more('Learn_More_Pixel_Peak')">Learn More</button>
+                        <button class="View_github" onclick="Open_GitHub_Pixel_Peak()">View on Github</button>
+                        <button class="View_live">Visit Site</button>
+                    </div>
+                    <div class="Learn_More_Information" id="Learn_More_Pixel_Peak">
+                        <p class="Info_Title">Pixel Peak</p>
+                        <p class="Info_Text">Pixel Peak is a Photo Video browser made with MongoDB, Express.Js, React,js
+                            and Node.Js. It utilizes <span
+                                style="text-decoration: underline; color: rgb(103, 161, 255);"
+                                onclick="Pexels_Api()">Pexels</span> API calls
+                            to
+                            retrieve the desired photos and videos.
+                        </p>
+                        <img class="close_img" onclick="close_learn_more('Learn_More_Pixel_Peak')"
+                            src="Images/CloseImg.png">
+                    </div>
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                    <img class="Images_caro" src="Images/NumberRecognition.png" alt="song">
+                    <div class="carousel_btn_container">
+                        <button class="Learn_More" onclick="learn_more('Learn_More_Number')">Learn More</button>
+                        <button class="View_github" onclick="Open_GitHub_Number()">View on Github</button>
+                        <button class="View_live">Visit Site</button>
+
+                    </div>
+                    <div class="Learn_More_Information" id="Learn_More_Number">
+                        <p class="Info_Title">Number Recognition</p>
+                        <p class="Info_Text">This is a 0 - 9 handwritten digit regognizer made with HTML, CSS, JS,
+                            Flask, and Tensorflow. The model used for the digit recognition was trained on the <span
+                                style="color: rgb(103, 161, 255); text-decoration: underline;"
+                                onclick="MNIST_dataset()">mnist</span>
+                            dataset consisting of 70,000 grayscale images using tensorflow. </p>
+                        <img class="close_img" onclick="close_learn_more('Learn_More_Number')"
+                            src="Images/CloseImg.png">
+                    </div>
+                </label>
+            </div>
+            <div class="Counter_Counter">
+                <p id="bar_1" class="bar"></p>
+                <p id="bar_2" class="bar"></p>
+                <p id="bar_3" class="bar"></p>
+            </div>
+            <div class="player">
+                <div class="upper-part">
+                    <div class="info-area" id="test">
+                        <label class="song-info" id="song-info-1">
+                            <div class="title">Comic Finds</div>
+                            <div class="sub-line">
+                                <div class="subtitle">HTML, CSS, JS, Flask, Node.js, MongoDB</div>
+                            </div>
+                        </label>
+                        <label class="song-info" id="song-info-2">
+                            <div class="title">Pixel Peak</div>
+                            <div class="sub-line">
+                                <div class="subtitle">MongoDB, Express.js, React.js, Node.js</div>
+
+                            </div>
+                        </label>
+                        <label class="song-info" id="song-info-3">
+                            <div class="title">Digit Recognizer</div>
+                            <div class="sub-line">
+                                <div class="subtitle">HTML, CSS, Flask, Tensorflow</div>
+
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div id="project_counter"></div>
+        </div>
+        -->
+        <div id="Marker"></div>
+    </div>
+
+    <div id="Contact_tab">
+        <p id="Contact_Title">Contact me</p>
+        <p id="Contact_Title_secondary">Please feel free to contact me using the contact form below. I will get back
+            to
+            you
+            as soon as possbile! </p>
+
+        <div id="ContactFormContainer">
+
+            <div id="name_email_container">
+
+                <input type="text" id="NameTextBox" class="InputBox" placeholder="Name">
+
+
+                <input type="text" id="EmailTextBox" class="InputBox" placeholder="Email">
+
+            </div>
+
+
+            <div id="NameInput">
+                <textarea type="text" id="MessageTextBox" class="InputMessageBox" placeholder="Message"></textarea>
+            </div>
+
+            <div id="SendButton">
+                <button id="MainButton" onclick="Call_Flask()">
+                    <div id="LoadingAnimation_Contact" class="loader"></div>Send
+                </button>
+            </div>
+
+            <div id="Notifs">
+                <p id="success_notif">Message sent succesfully!</p>
+                <p id="fail_notif">An error occured.</p>
+            </div>
+            <div id="Loader_contact" class="loader"></div>
+        </div>
+
+        <div id="Email_Phone_Container">
+            <div id="Email">
+                <p class="Email_Phone_title">Email Address</p>
+                <p class="Email_Phone">lleins237@gmail.com</p>
+                <p class="Email_Phone">Alternate: llleins23@gmail.com</p>
+            </div>
+            <div id="Phone">
+                <p class="Email_Phone_title">Phone Number</p>
+                <p class="Email_Phone">604-701-7527</p>
+                <p class="Email_Phone">Alternate: 604-796-2941</p>
+            </div>
+        </div>
+
+        <p id="Copyright_text">Copyright © 2024 - Lukas Leins - All Rights Reserved</p>
+        <div id="bottom_socials_container">
+            <img class="bottom_socials_imgs" onclick="Open_GitHub()" src="Images/big_git.png">
+            <img class="bottom_socials_imgs" onclick="openLinkedIn()" src="Images/big_link.png">
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+</html>
